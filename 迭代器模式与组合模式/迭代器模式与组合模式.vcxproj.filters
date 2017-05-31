@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\失败代码">
+      <UniqueIdentifier>{5e6da4a0-c6c3-4c9f-ba41-19bfc185aaea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\非组合模式迭代器">
+      <UniqueIdentifier>{02039d50-d677-4906-b8ed-28edcc4f4848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\非组合模式迭代器\kernel">
+      <UniqueIdentifier>{c2b04341-1c13-4b5e-9708-344fa442e139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\组合模式迭代器">
+      <UniqueIdentifier>{a6943eb3-1504-4c37-a9c4-da86f175e91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\组合模式迭代器\kernel">
+      <UniqueIdentifier>{3b9ee900-6047-4d3f-9eba-bc14db413bed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NewMenuItem.h">
+      <Filter>头文件\组合模式迭代器</Filter>
+    </ClInclude>
+    <ClInclude Include="NewMenu.h">
+      <Filter>头文件\组合模式迭代器</Filter>
+    </ClInclude>
+    <ClInclude Include="DinerMenu.h">
+      <Filter>头文件\非组合模式迭代器</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuItem.h">
+      <Filter>头文件\非组合模式迭代器</Filter>
+    </ClInclude>
+    <ClInclude Include="PancakeHouseMenu.h">
+      <Filter>头文件\非组合模式迭代器</Filter>
+    </ClInclude>
+    <ClInclude Include="DinerMenuIterator.h">
+      <Filter>头文件\非组合模式迭代器\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="PancakeHouseMenuIterator.h">
+      <Filter>头文件\非组合模式迭代器\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Fail_CompositeIterator.h">
+      <Filter>头文件\失败代码</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorIterator.h">
+      <Filter>头文件\组合模式迭代器\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CompositeIterator.h">
+      <Filter>头文件\组合模式迭代器\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuComponent.h">
+      <Filter>头文件\组合模式迭代器\kernel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -25,7 +25,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.迭代器模式与组合�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "注意事项", "注意事项", "{070651E9-25D0-4A12-8887-021674E415FF}"
 	ProjectSection(SolutionItems) = preProject
-		Readme.txt = Readme.txt
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Global

@@ -1,4 +1,4 @@
-#include "NYPizzaStore.h"
+ï»¿#include "NYPizzaStore.h"
 #include "NYPizza1.h"
 #include "NYPizza2.h"
 #include "NYPizzaIngredientFactory.h"
@@ -14,7 +14,7 @@ NYPizzaStore::~NYPizzaStore()
 
 Pizza * NYPizzaStore::createPizza(string type)
 {
-	//Í¨¹ı»ùÀàÀ´½øĞĞÍ¨ĞÅ
+	//é€šè¿‡åŸºç±»æ¥è¿›è¡Œé€šä¿¡
 	Pizza * pizza = NULL;
 	PizzaIngredientFactory * ingredientFactory = new NYPizzaIngredientFactory();
 

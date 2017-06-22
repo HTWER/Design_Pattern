@@ -1,4 +1,4 @@
-#ifndef DOUGH_H__
+﻿#ifndef DOUGH_H__
 #define DOUGH_H__
 #include <iostream>
 using namespace std;

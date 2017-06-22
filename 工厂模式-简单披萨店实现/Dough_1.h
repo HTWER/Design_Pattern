@@ -1,4 +1,4 @@
-#ifndef DOUGH_1_H__
+﻿#ifndef DOUGH_1_H__
 #define DOUGH_1_H__
 #include "Dough.h"
 

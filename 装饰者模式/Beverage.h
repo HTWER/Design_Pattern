@@ -1,21 +1,21 @@
-#ifndef __BEVERAGE__H_
+ï»¿#ifndef __BEVERAGE__H_
 #define __BEVERAGE__H_
 
 #include <string>
 using namespace std;
 
-//³éÏóÀà
+//æŠ½è±¡ç±»
 class Beverage
 {
 public:
 	Beverage();
 	~Beverage();
 
-	//Ğ´³É´¿Ğéº¯ÊıĞéº¯Êı
+	//å†™æˆçº¯è™šå‡½æ•°è™šå‡½æ•°
 	virtual string getDescription() = 0;
 	virtual float cost() = 0;
 
-	//ÒûÁÏÃû×Ö
+	//é¥®æ–™åå­—
 	string description;
 };
 

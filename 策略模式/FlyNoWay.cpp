@@ -1,4 +1,4 @@
-#include "FlyNoWay.h"
+ï»¿#include "FlyNoWay.h"
 #include <iostream>
 using namespace std;
 
@@ -14,5 +14,5 @@ FlyNoWay::~FlyNoWay()
 
 void FlyNoWay::Fly()
 {
-	cout << "ÎÞ·¨·ÉÐÐ" << endl;
+	cout << "æ— æ³•é£žè¡Œ" << endl;
 }

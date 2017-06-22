@@ -1,4 +1,4 @@
-#include "DecoyDuck.h"
+ï»¿#include "DecoyDuck.h"
 #include <iostream>
 using namespace std;
 
@@ -14,5 +14,5 @@ DecoyDuck::~DecoyDuck()
 
 void DecoyDuck::Display()
 {
-	cout << "ËÜÁÏÑ¼" << endl;
+	cout << "å¡‘æ–™é¸­" << endl;
 }

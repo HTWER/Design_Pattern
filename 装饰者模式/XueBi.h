@@ -1,4 +1,4 @@
-#ifndef __XUEBI_H__
+ï»¿#ifndef __XUEBI_H__
 #define __XUEBI_H__
 
 #include "Beverage.h"
@@ -9,7 +9,7 @@ public:
 	XueBi();
 	~XueBi();
 
-	//ÊµÏÖÐéº¯Êý
+	//å®žçŽ°è™šå‡½æ•°
 	string getDescription();
 	float cost();
 };

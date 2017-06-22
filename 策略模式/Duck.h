@@ -1,4 +1,4 @@
-#ifndef __DUCK_H__
+ï»¿#ifndef __DUCK_H__
 #define __DUCK_H__
 
 #include "FlyBehavior.h"
@@ -7,20 +7,20 @@
 class Duck
 {
 public:
-	//½Ó¿Ú;½Ó¿Ú±ØĞëÊÇÖ¸Õë»òÕßÒıÓÃ;¿ÉÒÔÈÈ²å°Î
-	//½Ó¿ÚÊÇÔËĞĞ¼Ü¹¹ÔÚÕâÀï´î½¨ºÃ£¬¼Ì³ĞÏÂÀ´µÄÀà¾Í¿ÉÒÔÖ±½ÓÊ¹ÓÃ
+	//æ¥å£;æ¥å£å¿…é¡»æ˜¯æŒ‡é’ˆæˆ–è€…å¼•ç”¨;å¯ä»¥çƒ­æ’æ‹”
+	//æ¥å£æ˜¯è¿è¡Œæ¶æ„åœ¨è¿™é‡Œæ­å»ºå¥½ï¼Œç»§æ‰¿ä¸‹æ¥çš„ç±»å°±å¯ä»¥ç›´æ¥ä½¿ç”¨
 	FlyBehavior * m_flyBehavior;
 	QuackBehavior * m_quackBahavior;
 
-	//Êµº¯Êı
-	void swin();            //ËùÓĞµÄÑ¼×Ó¶¼»áÓÎÓ¾,ÇÒÓÎÓ¾µÄ·½Ê½¶¼ÏàÍ¬
-	void PerformFly();      //µ÷ÓÃ½Ó¿ÚµÄº¯Êı
-	void PerformQuack();    //µ÷ÓÃ½Ó¿ÚµÄº¯Êı
-	void SetFlyBehavior(FlyBehavior * flyBehavior);  //Îª½Ó¿ÚFlyBehaviorÁ¬½ÓĞ¾Æ¬µÄÁ´½Óº¯Êı
-	void SetQuackBehavior(QuackBehavior * quackBahavior);//Îª½Ó¿ÚQuackBehaviorÁ¬½ÓĞ¾Æ¬µÄÁ´½Óº¯Êı
+	//å®å‡½æ•°
+	void swin();            //æ‰€æœ‰çš„é¸­å­éƒ½ä¼šæ¸¸æ³³,ä¸”æ¸¸æ³³çš„æ–¹å¼éƒ½ç›¸åŒ
+	void PerformFly();      //è°ƒç”¨æ¥å£çš„å‡½æ•°
+	void PerformQuack();    //è°ƒç”¨æ¥å£çš„å‡½æ•°
+	void SetFlyBehavior(FlyBehavior * flyBehavior);  //ä¸ºæ¥å£FlyBehaviorè¿æ¥èŠ¯ç‰‡çš„é“¾æ¥å‡½æ•°
+	void SetQuackBehavior(QuackBehavior * quackBahavior);//ä¸ºæ¥å£QuackBehaviorè¿æ¥èŠ¯ç‰‡çš„é“¾æ¥å‡½æ•°
 
-	//´¿Ğéº¯Êı
-	virtual void Display() = 0; //Ã¿¸öÑ¼×ÓµÄÑù×Ó¶¼²»Í¬£¬ÓÃ½Ó¿ÚÀ´ÊµÏÖ¸üºÃ
+	//çº¯è™šå‡½æ•°
+	virtual void Display() = 0; //æ¯ä¸ªé¸­å­çš„æ ·å­éƒ½ä¸åŒï¼Œç”¨æ¥å£æ¥å®ç°æ›´å¥½
 
 	Duck();
 	~Duck();

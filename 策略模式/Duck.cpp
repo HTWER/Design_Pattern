@@ -1,4 +1,4 @@
-#include "Duck.h"
+﻿#include "Duck.h"
 #include <iostream>
 using namespace std;
 
@@ -14,7 +14,7 @@ Duck::~Duck()
 
 void Duck::swin()
 {
-	cout << "��Ӿ" << endl;
+	cout << "游泳" << endl;
 }
 
 void Duck::PerformFly()

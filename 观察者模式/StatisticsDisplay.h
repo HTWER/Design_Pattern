@@ -1,4 +1,4 @@
-#ifndef __STATISTICSDISPLAY_H__
+ï»¿#ifndef __STATISTICSDISPLAY_H__
 #define __STATISTICSDISPLAY_H__
 
 #include "Observer.h"
@@ -10,7 +10,7 @@ public:
 	StatisticsDisplay();
 	~StatisticsDisplay();
 
-	//×î¸ßÊı¾İÁ¿
+	//æœ€é«˜æ•°æ®é‡
 	float m_maxTemp;
 	float m_maxHumidity;
 	float m_maxPressure;

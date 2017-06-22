@@ -1,4 +1,4 @@
-#include "StatisticsDisplay.h"
+ï»¿#include "StatisticsDisplay.h"
 #include <iostream>
 using namespace std;
 
@@ -28,5 +28,5 @@ void StatisticsDisplay::update(DataPakeger data)
 
 void StatisticsDisplay::display()
 {
-	cout << "Ä¿Ç°×î¸ßÎÂ¶È:" << m_maxTemp << "F ×î¸ßÊª¶È:" << m_maxHumidity << "% ×î¸ßÆøÑ¹:" << m_maxPressure << "P" << endl;
+	cout << "ç›®å‰æœ€é«˜æ¸©åº¦:" << m_maxTemp << "F æœ€é«˜æ¹¿åº¦:" << m_maxHumidity << "% æœ€é«˜æ°”åŽ‹:" << m_maxPressure << "P" << endl;
 }

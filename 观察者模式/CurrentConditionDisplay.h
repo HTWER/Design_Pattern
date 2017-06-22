@@ -1,22 +1,22 @@
-#ifndef __CURRENTCONDITIONDISPLAY_H__
+ï»¿#ifndef __CURRENTCONDITIONDISPLAY_H__
 #define __CURRENTCONDITIONDISPLAY_H__
 
 #include "Observer.h"
 #include "DisplayElement.h"
 
-//ÏÔÊ¾°å£¬¾ßÓĞÁ½¸ö½Ó¿ÚÀà
+//æ˜¾ç¤ºæ¿ï¼Œå…·æœ‰ä¸¤ä¸ªæ¥å£ç±»
 class CurrentConditionDisplay:public Observer,DisplayElement
 {
 public:
 	CurrentConditionDisplay();
 	~CurrentConditionDisplay();
 
-	//Êı¾İ
+	//æ•°æ®
 	float m_temp;
 	float m_humidity;
 	float m_pressure;
 
-	//ÖØĞ´Á½¸öº¯Êı
+	//é‡å†™ä¸¤ä¸ªå‡½æ•°
 	void update(DataPakeger data);
 	void display();
 };

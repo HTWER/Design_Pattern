@@ -1,4 +1,4 @@
-#ifndef __DECOTDUCK_H__
+ï»¿#ifndef __DECOTDUCK_H__
 #define __DECOTDUCK_H__
 #include "Duck.h"
 
@@ -8,7 +8,7 @@ public:
 	DecoyDuck();
 	~DecoyDuck();
 
-	//ÊµÏÖDuckÖÐµÄ´¿Ðéº¯Êý
+	//å®žçŽ°Duckä¸­çš„çº¯è™šå‡½æ•°
 	void Display();
 };
 

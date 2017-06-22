@@ -1,4 +1,4 @@
-#ifndef __REDDUCK_H__
+ï»¿#ifndef __REDDUCK_H__
 #define __REDDUCK_H__
 #include "Duck.h"
 
@@ -8,7 +8,7 @@ public:
 	RedDuck();
 	~RedDuck();
 
-	//ÊµÏÖDUCKµÄ´¿Ðéº¯Êý
+	//å®žçŽ°DUCKçš„çº¯è™šå‡½æ•°
 	void Display();
 };
 

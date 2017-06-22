@@ -1,4 +1,4 @@
-#include "QuackGG.h"
+ï»¿#include "QuackGG.h"
 #include <iostream>
 using namespace std;
 
@@ -14,5 +14,5 @@ QuackGG::~QuackGG()
 
 void QuackGG::Quack()
 {
-	cout << "ßÉßÉ½Ð" << endl;
+	cout << "å‘±å‘±å«" << endl;
 }

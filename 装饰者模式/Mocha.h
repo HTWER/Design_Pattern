@@ -1,4 +1,4 @@
-#ifndef __MOCHA_H__
+ï»¿#ifndef __MOCHA_H__
 #define __MOCHA_H__
 
 #include "Beverage.h"
@@ -9,15 +9,15 @@ public:
 	Mocha(Beverage * beverage);
 	~Mocha();
 
-	//ºËĞÄ£º±£´æ×°ÊÎ¶ÔÏó
+	//æ ¸å¿ƒï¼šä¿å­˜è£…é¥°å¯¹è±¡
 	Beverage * beverage;
 
-	//ÊµÏÖĞéº¯Êı£¬²úÉú×°ÊÎĞ§Ó¦
+	//å®ç°è™šå‡½æ•°ï¼Œäº§ç”Ÿè£…é¥°æ•ˆåº”
 	string getDescription();
 	float cost();
 
 private:
-	Mocha();  //Ëø×¡Ä¬ÈÏ¹¹Ôìº¯Êı£¬ÒòÎªÒ»¶¨ÒªÓĞ±»×°ÊÎÕß
+	Mocha();  //é”ä½é»˜è®¤æ„é€ å‡½æ•°ï¼Œå› ä¸ºä¸€å®šè¦æœ‰è¢«è£…é¥°è€…
 };
 
 #endif

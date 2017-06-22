@@ -1,4 +1,4 @@
-#ifndef __QUACKBEHAVIOR_H__
+ï»¿#ifndef __QUACKBEHAVIOR_H__
 #define __QUACKBEHAVIOR_H__
 
 class QuackBehavior
@@ -6,7 +6,7 @@ class QuackBehavior
 public:
 	QuackBehavior(){};
 	~QuackBehavior(){};
-	virtual void Quack() = 0;   //´¿Ðéº¯Êý
+	virtual void Quack() = 0;   //çº¯è™šå‡½æ•°
 };
 
 

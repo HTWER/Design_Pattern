@@ -1,4 +1,4 @@
-#ifndef _QUACKNOWAY_H__
+﻿#ifndef _QUACKNOWAY_H__
 #define _QUACKNOWAY_H__
 #include "QuackBehavior.h"
 
@@ -8,7 +8,7 @@ public:
 	QuackNoWay();
 	~QuackNoWay();
 
-	//ʵ�ֽӿ����еĴ��麯��
+	//实现接口类中的纯虚函数
 	void Quack();
 };
 

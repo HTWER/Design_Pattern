@@ -1,14 +1,14 @@
-#ifndef __FLYBEHAVIOR_H__
+ï»¿#ifndef __FLYBEHAVIOR_H__
 #define __FLYBEHAVIOR_H__
 
-//³éÏóÀà
+//æŠ½è±¡ç±»
 
 class FlyBehavior
 {
 public:
 	FlyBehavior(){};
 	~FlyBehavior(){};
-	virtual void Fly() = 0;   //´¿Ðéº¯Êý
+	virtual void Fly() = 0;   //çº¯è™šå‡½æ•°
 };
 
 #endif

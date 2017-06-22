@@ -1,4 +1,4 @@
-#ifndef __GREENDUCK_H__
+ï»¿#ifndef __GREENDUCK_H__
 #define __GREENDUCK_H__
 #include "Duck.h"
 
@@ -8,7 +8,7 @@ public:
 	GreenDuck();
 	~GreenDuck();
 
-	//ÊµÏÖDuckÀàÖÐµÄ´¿Ðéº¯Êý
+	//å®žçŽ°Duckç±»ä¸­çš„çº¯è™šå‡½æ•°
 	void Display();
 };
 

@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #ifndef __SUBJECT_H__
 #define __SUBJECT_H__
 
@@ -6,21 +6,21 @@
 #include "Observer.h"
 using namespace std;
 
-//ÆäÊµÕâ¸öÄ£Ê½¾ÍÊÇÒ»¸öÏûÏ¢ÍÆ¹ãÄ£Ê½£¬¾ÍÊÇÏë½«×Ô¼ºµÄÊı¾İÔÚÒ»¶¨µÄÊ±ºòÍÆ¹ãµ½ËùÓĞ¶©ÔÄµÄ¹Û²ìÕßÉÏ
+//å…¶å®è¿™ä¸ªæ¨¡å¼å°±æ˜¯ä¸€ä¸ªæ¶ˆæ¯æ¨å¹¿æ¨¡å¼ï¼Œå°±æ˜¯æƒ³å°†è‡ªå·±çš„æ•°æ®åœ¨ä¸€å®šçš„æ—¶å€™æ¨å¹¿åˆ°æ‰€æœ‰è®¢é˜…çš„è§‚å¯Ÿè€…ä¸Š
 
-//Ò²ËãÊÇ½Ó¿ÚÀà£¬Ã»½Óµ½½Ó¿ÚÉÏÃæ
+//ä¹Ÿç®—æ˜¯æ¥å£ç±»ï¼Œæ²¡æ¥åˆ°æ¥å£ä¸Šé¢
 class Subject
 {
 public:
 	Subject();
 	~Subject();
 
-	//ËùÓĞ×¢²áµÄ¹Û²ìÕß¶¼´æ·ÅÔÚÕâÀï
+	//æ‰€æœ‰æ³¨å†Œçš„è§‚å¯Ÿè€…éƒ½å­˜æ”¾åœ¨è¿™é‡Œ
 	vector<Observer*> observersList;
 
-	void registerObserver(Observer * o);   //×¢²á
-	void removeObserver(Observer * o);	   //×¢Ïú
-	virtual void notifyObserver() = 0;	   //Í¨ÖªËùÓĞ¹Û²ìÕß,Õâ¸öº¯Êı²»ÔÚÕâÀïÊµÏÖ
+	void registerObserver(Observer * o);   //æ³¨å†Œ
+	void removeObserver(Observer * o);	   //æ³¨é”€
+	virtual void notifyObserver() = 0;	   //é€šçŸ¥æ‰€æœ‰è§‚å¯Ÿè€…,è¿™ä¸ªå‡½æ•°ä¸åœ¨è¿™é‡Œå®ç°
 };
 
 #endif

@@ -1,4 +1,4 @@
-#ifndef __KELE_H__
+ï»¿#ifndef __KELE_H__
 #define __KELE_H__
 
 #include "Beverage.h"
@@ -9,7 +9,7 @@ public:
 	KeLe();
 	~KeLe();
 
-	//ÊµÏÖÐéº¯Êý
+	//å®žçŽ°è™šå‡½æ•°
 	string getDescription();
 	float cost();
 };

@@ -1,4 +1,4 @@
-#include "QuackNoWay.h"
+ï»¿#include "QuackNoWay.h"
 #include <iostream>
 using namespace std;
 
@@ -14,5 +14,5 @@ QuackNoWay::~QuackNoWay()
 
 void QuackNoWay::Quack()
 {
-	cout << "²»»á½Ð" << endl;
+	cout << "ä¸ä¼šå«" << endl;
 }

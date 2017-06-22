@@ -1,4 +1,4 @@
-#ifndef __QUACK_H__
+ï»¿#ifndef __QUACK_H__
 #define __QUACK_H__
 #include "QuackBehavior.h"
 
@@ -8,7 +8,7 @@ public:
 	QuackZZ();
 	~QuackZZ();
 
-	//ÊµÏÖ½Ó¿ÚÀàÖĞµÄĞéº¯Êı
+	//å®ç°æ¥å£ç±»ä¸­çš„è™šå‡½æ•°
 	void Quack();
 };
 

@@ -1,32 +1,32 @@
-#include <iostream>
-#include <Windows.h>  //ÓÃ»Ø¿ØÖÆÊ±¼ä¼ä¸ô
+ï»¿#include <iostream>
+#include <Windows.h>  //ç”¨å›æ§åˆ¶æ—¶é—´é—´éš”
 #include <ctime>
 #include <cstdlib>
-#include "WeatherData.h"                 //Ö÷Ìâ
-#include "CurrentConditionDisplay.h"     //¹Û²ìÕß
-#include "StatisticsDisplay.h"			 //¹Û²ìÕß
+#include "WeatherData.h"                 //ä¸»é¢˜
+#include "CurrentConditionDisplay.h"     //è§‚å¯Ÿè€…
+#include "StatisticsDisplay.h"			 //è§‚å¯Ÿè€…
 using namespace std;
 
 int main()
 {
-	WeatherData weatherdata;  //Ö÷Ìâ
+	WeatherData weatherdata;  //ä¸»é¢˜
 
-	//¹Û²ìÕß
+	//è§‚å¯Ÿè€…
 	CurrentConditionDisplay currentconditiondisplay;  
 	StatisticsDisplay statisticsdisplay;
 
-	//¹Û²ìÕßµ½Ö÷Ìâ×¢²á
+	//è§‚å¯Ÿè€…åˆ°ä¸»é¢˜æ³¨å†Œ
 	currentconditiondisplay.toRegister(&weatherdata); 
 	statisticsdisplay.toRegister(&weatherdata);
 
-	//Ä£Äâ¼ì²âÕ¾
+	//æ¨¡æ‹Ÿæ£€æµ‹ç«™
 	srand(time(0));
 	while (true)
 	{
 		weatherdata.m_temp = rand()%36;
 		weatherdata.m_humidity = rand()%100;
 		weatherdata.m_pressure = rand()%101;
-		weatherdata.measurementsChanged();   //ÏûÏ¢ÍÆËÍ
+		weatherdata.measurementsChanged();   //æ¶ˆæ¯æ¨é€
 		Sleep(500);
 	}
 

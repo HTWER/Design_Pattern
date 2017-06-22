@@ -1,9 +1,9 @@
-#ifndef __DATAPAKEGER_H__
+ï»¿#ifndef __DATAPAKEGER_H__
 #define __DATAPAKEGER_H__
 
-//Êı¾İ°ü
-//Ã»ÓĞº¯ÊıµÄÀà¾ÍÊÇ½á¹¹Ìå
-//Õâ¸öÀàÊôÓÚ¸¨ÖúÓÃµÄÊı¾İÀàĞÍ
+//æ•°æ®åŒ…
+//æ²¡æœ‰å‡½æ•°çš„ç±»å°±æ˜¯ç»“æ„ä½“
+//è¿™ä¸ªç±»å±äºè¾…åŠ©ç”¨çš„æ•°æ®ç±»å‹
 struct DataPakeger
 {
 	float temp;

@@ -1,22 +1,22 @@
-#ifndef __OBSERVER_H__
+ï»¿#ifndef __OBSERVER_H__
 #define __OBSERVER_H__
 
 #include "DataPakeger.h"
 
-//ÉùÃ÷Ò»ÏÂ
+//å£°æ˜ä¸€ä¸‹
 class Subject;
 
-//½Ó¿ÚÀà£¬½Óµ½ÁËSubjectÖ÷ÌâÀàµÄobserversListÖĞ
+//æ¥å£ç±»ï¼Œæ¥åˆ°äº†Subjectä¸»é¢˜ç±»çš„observersListä¸­
 class Observer
 {
 public:
 	Observer();
 	~Observer();
 
-	//¹Û²ìµÄÖ÷Ìâ¶ÔÏó
+	//è§‚å¯Ÿçš„ä¸»é¢˜å¯¹è±¡
 	Subject * subject;
 
-	//×¢²áº¯Êı
+	//æ³¨å†Œå‡½æ•°
 	void toRegister(Subject * subject);
 
 	void toCancel();

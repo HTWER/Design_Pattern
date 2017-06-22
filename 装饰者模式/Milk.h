@@ -1,23 +1,23 @@
-#ifndef __MILK_H__
+ï»¿#ifndef __MILK_H__
 #define __MILK_H__
 
 #include "Beverage.h"
 
-class Milk:public Beverage   //ºËĞÄ£º¼Ì³ĞÀàĞÍ
+class Milk:public Beverage   //æ ¸å¿ƒï¼šç»§æ‰¿ç±»å‹
 {
 public:
 	Milk(Beverage * beverage);
 	~Milk();
 	
-	//ºËĞÄ£º±£´æ×°ÊÎ¶ÔÏó
+	//æ ¸å¿ƒï¼šä¿å­˜è£…é¥°å¯¹è±¡
 	Beverage * beverage;
 
-	//ÊµÏÖĞéº¯Êı£¬²úÉú×°ÊÎĞ§Ó¦
+	//å®ç°è™šå‡½æ•°ï¼Œäº§ç”Ÿè£…é¥°æ•ˆåº”
 	string getDescription();
 	float cost();
 
 private:
-	Milk();  //Ëø×¡Ä¬ÈÏ¹¹Ôìº¯Êı£¬ÒòÎªÒ»¶¨ÒªÓĞ±»×°ÊÎÕß
+	Milk();  //é”ä½é»˜è®¤æ„é€ å‡½æ•°ï¼Œå› ä¸ºä¸€å®šè¦æœ‰è¢«è£…é¥°è€…
 };
 
 #endif

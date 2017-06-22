@@ -1,4 +1,4 @@
-#ifndef __QUACKGG_H__
+﻿#ifndef __QUACKGG_H__
 #define __QUACKGG_H__
 #include "QuackBehavior.h"
 
@@ -8,7 +8,7 @@ public:
 	QuackGG();
 	~QuackGG();
 
-	//ʵ�ֽӿ����еĴ��麯��
+	//实现接口类中的纯虚函数
 	void Quack();
 };
 

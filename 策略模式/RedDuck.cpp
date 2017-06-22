@@ -1,4 +1,4 @@
-#include "RedDuck.h"
+ï»¿#include "RedDuck.h"
 #include <iostream>
 using namespace std;
 
@@ -13,5 +13,5 @@ RedDuck::~RedDuck()
 
 void RedDuck::Display()
 {
-	cout << "ºìÉ«µÄÑ¼×Ó" << endl;
+	cout << "çº¢è‰²çš„é¸­å­" << endl;
 }

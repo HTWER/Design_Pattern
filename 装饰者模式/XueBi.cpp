@@ -1,4 +1,4 @@
-#include "XueBi.h"
+﻿#include "XueBi.h"
 
 
 XueBi::XueBi()

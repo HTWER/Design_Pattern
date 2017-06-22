@@ -1,4 +1,4 @@
-#ifndef __FLYNOWAY_H__
+﻿#ifndef __FLYNOWAY_H__
 #define __FLYNOWAY_H__
 #include "FlyBehavior.h"
 
@@ -8,7 +8,7 @@ public:
 	FlyNoWay();
 	~FlyNoWay();
 
-	//ʵ�ֽӿ���Ĵ��麯��
+	//实现接口类的纯虚函数
 	void Fly();
 };
 

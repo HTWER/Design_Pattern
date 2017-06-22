@@ -1,4 +1,4 @@
-#include "FlyWithWings.h"
+ï»¿#include "FlyWithWings.h"
 #include <iostream>
 using namespace std;
 
@@ -13,5 +13,5 @@ FlyWithWings::~FlyWithWings()
 
 void FlyWithWings::Fly()
 {
-	cout << "Õ¹³á·ÉÏè" << endl;
+	cout << "å±•ç¿…é£žç¿”" << endl;
 }

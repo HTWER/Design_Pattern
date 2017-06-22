@@ -1,7 +1,7 @@
-#ifndef __FLYWITHWINGS_H__
+ï»¿#ifndef __FLYWITHWINGS_H__
 #define __FLYWITHWINGS_H__
 
-//½Ó¿ÚÀàµÄ¾ßÌåÀà
+//æ¥å£ç±»çš„å…·ä½“ç±»
 
 #include "FlyBehavior.h"
 
@@ -11,7 +11,7 @@ public:
 	FlyWithWings();
 	~FlyWithWings();
 
-	//ÊµÏÖ½Ó¿ÚÀàÖĞµÄ´¿Ğéº¯Êı
+	//å®ç°æ¥å£ç±»ä¸­çš„çº¯è™šå‡½æ•°
 	void Fly();
 };
 

@@ -1,25 +1,25 @@
-#ifndef __WEATHERDATA_H__
+ï»¿#ifndef __WEATHERDATA_H__
 #define __WEATHERDATA_H__
 
 #include "Subject.h"
 
-//ÆøÏóÕ¾Àı×Ó
+//æ°”è±¡ç«™ä¾‹å­
 class WeatherData:public Subject
 {
 public:
 	WeatherData();
 	~WeatherData();
 
-	//Êı¾İ
+	//æ•°æ®
 	float m_temp;
 	float m_humidity;
 	float m_pressure;
 
-	//µ±ÓĞÊı¾İ¸Ä±äÊ±£¬½«»á×Ô¶¯µ÷ÓÃÕâ¸öº¯Êı(ÆäÖĞµ÷ÓÃnotifyObserversº¯Êı)
-	//ÓÉÓÚÃ»ÓĞ¼ì²âÕ¾Õâ¸ö¶ÔÏó£¬ËùÒÔÕâ¸öº¯ÊıÖ±½ÓÔÚÖ÷º¯ÊıÖĞµ÷ÓÃÒ»ÏÂ¾ÍºÃÁË
+	//å½“æœ‰æ•°æ®æ”¹å˜æ—¶ï¼Œå°†ä¼šè‡ªåŠ¨è°ƒç”¨è¿™ä¸ªå‡½æ•°(å…¶ä¸­è°ƒç”¨notifyObserverså‡½æ•°)
+	//ç”±äºæ²¡æœ‰æ£€æµ‹ç«™è¿™ä¸ªå¯¹è±¡ï¼Œæ‰€ä»¥è¿™ä¸ªå‡½æ•°ç›´æ¥åœ¨ä¸»å‡½æ•°ä¸­è°ƒç”¨ä¸€ä¸‹å°±å¥½äº†
 	void measurementsChanged();
 
-	//ÖØĞ´Í¨Öªº¯Êı£¬ÒòÎª¿ÉÄÜÒò¾ßÌå¶ÔÏóµÄ²»Í¬µ¼ÖÂĞèÒª´«ÊäÊı¾İµÄ²»Í¬
+	//é‡å†™é€šçŸ¥å‡½æ•°ï¼Œå› ä¸ºå¯èƒ½å› å…·ä½“å¯¹è±¡çš„ä¸åŒå¯¼è‡´éœ€è¦ä¼ è¾“æ•°æ®çš„ä¸åŒ
 	void notifyObserver();
 };
 

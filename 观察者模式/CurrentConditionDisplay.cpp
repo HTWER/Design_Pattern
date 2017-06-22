@@ -1,4 +1,4 @@
-#include "CurrentConditionDisplay.h"
+ï»¿#include "CurrentConditionDisplay.h"
 #include <iostream>
 using namespace std;
 
@@ -23,5 +23,5 @@ void CurrentConditionDisplay::update(DataPakeger data)
 
 void CurrentConditionDisplay::display()
 {
-	cout << "µ±Ç°Æøºò£ºÎÂ¶È:" << m_temp << "F Êª¶È:" << m_humidity << "% ÆøÑ¹:" << m_pressure  << "P" << endl;
+	cout << "å½“å‰æ°”å€™ï¼šæ¸©åº¦:" << m_temp << "F æ¹¿åº¦:" << m_humidity << "% æ°”åŽ‹:" << m_pressure  << "P" << endl;
 }

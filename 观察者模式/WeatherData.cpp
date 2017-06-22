@@ -1,4 +1,4 @@
-#include "WeatherData.h"
+ï»¿#include "WeatherData.h"
 #include "DataPakeger.h"
 
 WeatherData::WeatherData()
@@ -17,13 +17,13 @@ void WeatherData::measurementsChanged()
 
 void WeatherData::notifyObserver()
 {
-	//¶ÔÊı¾İ½øĞĞ´ò°ü
+	//å¯¹æ•°æ®è¿›è¡Œæ‰“åŒ…
 	DataPakeger data;
 	data.temp = m_temp;
 	data.humidity = m_humidity;
 	data.pressure = m_pressure;
 
-	//¿ªÊ¼ÍÆËÍ
+	//å¼€å§‹æ¨é€
 	for (vector<Observer*>::iterator iter = observersList.begin(); iter != observersList.end();iter++)
 	{
 		(*iter)->update(data);

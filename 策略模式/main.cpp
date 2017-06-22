@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 #include "GreenDuck.h"
 #include "RedDuck.h"
@@ -15,7 +15,7 @@ using namespace std;
 
 int main()
 {
-	//´´½¨Ğ¾Æ¬£¬×¼È·µÄËµÕâĞ©¶¼ÊÇ½Ó¿Ú
+	//åˆ›å»ºèŠ¯ç‰‡ï¼Œå‡†ç¡®çš„è¯´è¿™äº›éƒ½æ˜¯æ¥å£
 	FlyWithWings * flyWithWings = new FlyWithWings;
 	FlyNoWay * flyNoWay = new FlyNoWay;
 
@@ -23,7 +23,7 @@ int main()
 	QuackZZ * quackZZ = new QuackZZ;
 	QuackNoWay * quackNoWay = new QuackNoWay;
 
-	//×é×°Ñ¼×Ó
+	//ç»„è£…é¸­å­
 	GreenDuck greenDuck;
 	greenDuck.SetFlyBehavior(flyWithWings);
 	greenDuck.SetQuackBehavior(quackGG);
@@ -36,7 +36,7 @@ int main()
 	decoyDeck.SetFlyBehavior(flyNoWay);
 	decoyDeck.SetQuackBehavior(quackNoWay);
 
-	//²âÊÔ
+	//æµ‹è¯•
 	greenDuck.Display();
 	greenDuck.PerformFly();
 	greenDuck.PerformQuack();

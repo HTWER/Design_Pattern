@@ -1,4 +1,4 @@
-#ifndef __NEWMENUITEM_H__
+﻿#ifndef __NEWMENUITEM_H__
 #define __NEWMENUITEM_H__
 
 #include "MenuComponent.h"

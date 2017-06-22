@@ -1,4 +1,4 @@
-#ifndef __NEWMENU_H__
+ï»¿#ifndef __NEWMENU_H__
 #define __NEWMENU_H__
 
 #include <vector>
@@ -9,12 +9,12 @@
 
 using namespace std;
 
-//¾¡Á¿¶¼ÓÃÖ¸Õë£¬Ö¸Õë¿ÉÒÔÌá¸ß²ÎÊı´«ÊäËÙ¶È£¬¶øÇÒÄÜ¹»ÊµÏÖ¶àÌ¬£¬µ«ÊÇÒª×¢ÒâÄÚ´æ¹ÜÀí
+//å°½é‡éƒ½ç”¨æŒ‡é’ˆï¼ŒæŒ‡é’ˆå¯ä»¥æé«˜å‚æ•°ä¼ è¾“é€Ÿåº¦ï¼Œè€Œä¸”èƒ½å¤Ÿå®ç°å¤šæ€ï¼Œä½†æ˜¯è¦æ³¨æ„å†…å­˜ç®¡ç†
 
 class NewMenu :public MenuComponent
 {
 public:
-	vector<MenuComponent*> menuComponents;		//Ö¸Õë¶¼ÓÉÕâÀï½øĞĞÍĞ¹ÜÁË£¬ËùÒÔÕâ¸öÀàÔÚÎö¹¹µÄÊ±ºòÒªÊÍ·ÅÕâÀïµÄËùÓĞÖ¸Õë
+	vector<MenuComponent*> menuComponents;		//æŒ‡é’ˆéƒ½ç”±è¿™é‡Œè¿›è¡Œæ‰˜ç®¡äº†ï¼Œæ‰€ä»¥è¿™ä¸ªç±»åœ¨ææ„çš„æ—¶å€™è¦é‡Šæ”¾è¿™é‡Œçš„æ‰€æœ‰æŒ‡é’ˆ
 	string name;
 	string description;
 
@@ -26,9 +26,9 @@ public:
 
 	Iterator* createIterator() override
 	{
-		//ÕâÀï²»ÊÇÖ±½ÓÄÃÒ»¸ö¾ÛºÏÀ´´´½¨µü´úÆ÷£¬¶øÊÇÄÇ¾ÛºÏµÄµü´úÆ÷À´´´½¨Ò»¸öµü´úÆ÷
-		//²»ÓÃ¾ÛºÏµÄµü´úÆ÷À´´´½¨µü´úÆ÷¿É²»¿ÉÒÔÊµÏÖ
-		return new CompositeIterator(new VectorIterator<MenuComponent*>(&menuComponents));		//¹îÒì£¬ÓÃµü´úÆ÷³õÊ¼»¯µü´úÆ÷
+		//è¿™é‡Œä¸æ˜¯ç›´æ¥æ‹¿ä¸€ä¸ªèšåˆæ¥åˆ›å»ºè¿­ä»£å™¨ï¼Œè€Œæ˜¯é‚£èšåˆçš„è¿­ä»£å™¨æ¥åˆ›å»ºä¸€ä¸ªè¿­ä»£å™¨
+		//ä¸ç”¨èšåˆçš„è¿­ä»£å™¨æ¥åˆ›å»ºè¿­ä»£å™¨å¯ä¸å¯ä»¥å®ç°
+		return new CompositeIterator(new VectorIterator<MenuComponent*>(&menuComponents));		//è¯¡å¼‚ï¼Œç”¨è¿­ä»£å™¨åˆå§‹åŒ–è¿­ä»£å™¨
 	}
 
 	void add(MenuComponent* menuComponent) override
@@ -71,11 +71,11 @@ public:
 		cout << endl << getName() << ", " << getDescription() << endl;
 		cout << "--------------------------" << endl;
 
-		//ÒÔÏÂ´úÂëÆäÊµÃ»ÓĞºÜ´óµÄ±ØÒª£¬ÍêÈ«¿ÉÒÔÓÃÒ»¸ö¼òµ¥µÄforÀ´Íê³É£¬ÕâÀïÕâÑùĞ´Ö»ÊÇÎªÁË³¢ÊÔÒ»ÏÂÊ¹ÓÃvectorµÄµü´úÆ÷
+		//ä»¥ä¸‹ä»£ç å…¶å®æ²¡æœ‰å¾ˆå¤§çš„å¿…è¦ï¼Œå®Œå…¨å¯ä»¥ç”¨ä¸€ä¸ªç®€å•çš„foræ¥å®Œæˆï¼Œè¿™é‡Œè¿™æ ·å†™åªæ˜¯ä¸ºäº†å°è¯•ä¸€ä¸‹ä½¿ç”¨vectorçš„è¿­ä»£å™¨
 		vector<MenuComponent*>::iterator iter = menuComponents.begin();
 		while (iter!=menuComponents.end())
 		{
-			(*iter)->print();		//vectorµÄµü´úÆ÷±¾À´¾ÍÊÇÒ»¸öÖ¸Õë£¬ÒªÕ¹¿ª²ÅÄÜµÃµ½vectorÕæÊÇ´¢´æµÄÄÚÈİ
+			(*iter)->print();		//vectorçš„è¿­ä»£å™¨æœ¬æ¥å°±æ˜¯ä¸€ä¸ªæŒ‡é’ˆï¼Œè¦å±•å¼€æ‰èƒ½å¾—åˆ°vectorçœŸæ˜¯å‚¨å­˜çš„å†…å®¹
 			iter++;
 		}
 	}

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "SimpleRemoteControl.h"
 #include "RemoteControl.h"
 #include "Light.h"
@@ -12,22 +12,22 @@ using namespace std;
 
 int main()
 {
-	//////////////////////////Ê¹ÓÃ¼òµ¥µÄÒ£¿ØÆ÷//////////////////////////
-// 	//´´½¨ÃüÁî
+	//////////////////////////ä½¿ç”¨ç®€å•çš„é¥æ§å™¨//////////////////////////
+// 	//åˆ›å»ºå‘½ä»¤
 // 	Light * light = new Light();
 // 	LightOnCommand * lightOnCommand = new LightOnCommand(light);
-// 	//²åÉÏÃüÁî
+// 	//æ’ä¸Šå‘½ä»¤
 // 	SimpleRemoteControl simpleRemoteControl;
 // 	simpleRemoteControl.setCommand(lightOnCommand);
-// 	//Æô¶¯ÃüÁî
+// 	//å¯åŠ¨å‘½ä»¤
 // 	simpleRemoteControl.buttonWasPressed();
 // 
 // 	delete light;
 // 	delete lightOnCommand;
-	//////////////////////////Ê¹ÓÃ¼òµ¥µÄÒ£¿ØÆ÷//////////////////////////
+	//////////////////////////ä½¿ç”¨ç®€å•çš„é¥æ§å™¨//////////////////////////
 
 
-	//////////////////////////Ê¹ÓÃ¸´ÔÓµÄÒ£¿ØÆ÷//////////////////////////
+	//////////////////////////ä½¿ç”¨å¤æ‚çš„é¥æ§å™¨//////////////////////////
 	Light * light = new Light();
 	LightOnCommand * lightOnCommand = new LightOnCommand(light);
 	LightOffCommand * lightOffCommand = new LightOffCommand(light);
@@ -52,8 +52,8 @@ int main()
 	remoteControl->offButtonWasPushed(1);
 	remoteControl->undoButtonWasPushed();
 
-	//ºêÃüÁî
-	cout << endl << "ºêÃüÁî£º" << endl;
+	//å®å‘½ä»¤
+	cout << endl << "å®å‘½ä»¤ï¼š" << endl;
 	Command* commands1[] = { lightOnCommand, stereoOnWithCDCommand };
 	MacroCommand * macroCommand1 = new MacroCommand(commands1, 2);
 
@@ -68,8 +68,8 @@ int main()
 	remoteControl->offButtonWasPushed(2);
 	remoteControl->undoButtonWasPushed();
 
-	//¶àÖØ³·Ïú¹¦ÄÜ
-	cout << endl << "¶àÖØ³·Ïú¹¦ÄÜ£º" << endl;
+	//å¤šé‡æ’¤é”€åŠŸèƒ½
+	cout << endl << "å¤šé‡æ’¤é”€åŠŸèƒ½ï¼š" << endl;
 	remoteControl->onButtonWasPushed(0);
 	remoteControl->offButtonWasPushed(0);
 	remoteControl->offButtonWasPushed(0);
@@ -81,7 +81,7 @@ int main()
 	remoteControl->undoButtonWasPushed();
 
 
-	//////////////////////////Ê¹ÓÃ¸´ÔÓµÄÒ£¿ØÆ÷//////////////////////////
+	//////////////////////////ä½¿ç”¨å¤æ‚çš„é¥æ§å™¨//////////////////////////
 
 	system("pause");
 	return 0;

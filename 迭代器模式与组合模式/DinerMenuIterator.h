@@ -1,7 +1,7 @@
-#ifndef __DINERMENUITERATOR_H__
+ï»¿#ifndef __DINERMENUITERATOR_H__
 #define __DINERMENUITERATOR_H__
 
-//²ÍÌü²Ëµ¥µü´úÆ÷Àà£¬»òÕßËµÊÇ ÓÃÓÚ±éÀúMenuItemÀàĞÍÊı×éµÄµü´úÆ÷
+//é¤å…èœå•è¿­ä»£å™¨ç±»ï¼Œæˆ–è€…è¯´æ˜¯ ç”¨äºéå†MenuItemç±»å‹æ•°ç»„çš„è¿­ä»£å™¨
 
 #include "Iterator.h"
 #include "MenuItem.h"
@@ -37,7 +37,7 @@ public:
 private:
 	MenuItem* items;
 	int* numberOfItems;
-	int position = 0;	//¼ÇÂ¼ÏÂÒ»¸ö½«Òª·ÃÎÊÎ»ÖÃ
+	int position = 0;	//è®°å½•ä¸‹ä¸€ä¸ªå°†è¦è®¿é—®ä½ç½®
 
 };
 

@@ -1,4 +1,4 @@
-#ifndef __COFFEEWITHHOOK_H__
+﻿#ifndef __COFFEEWITHHOOK_H__
 #define __COFFEEWITHHOOK_H__
 
 #include <iostream>

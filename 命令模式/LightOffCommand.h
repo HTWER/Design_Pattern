@@ -1,10 +1,10 @@
-#ifndef __LIGHTOFFCOMMAND_H__
+ï»¿#ifndef __LIGHTOFFCOMMAND_H__
 #define __LIGHTOFFCPMMAND_H__
 
 #include "Command.h"
 #include "Light.h"
 
-//ÁªÏµÏÖÊµ¾ßÌå»úÆ÷£º¾ßÌåµÄCommand¹æ¸ñÉè±¸£¨±ØÐëÒªÊµÏÖexecuteº¯Êý£©
+//è”ç³»çŽ°å®žå…·ä½“æœºå™¨ï¼šå…·ä½“çš„Commandè§„æ ¼è®¾å¤‡ï¼ˆå¿…é¡»è¦å®žçŽ°executeå‡½æ•°ï¼‰
 class LightOffCommand :public Command
 {
 private:
@@ -16,13 +16,13 @@ public:
 		this->light = light;
 	}
 
-	//ÊµÏÖ¾ßÌåÃüÁî
+	//å®žçŽ°å…·ä½“å‘½ä»¤
 	void execute()
 	{
 		light->off();
 	}
 
-	//³·Ïú
+	//æ’¤é”€
 	void undo()
 	{
 		light->on();

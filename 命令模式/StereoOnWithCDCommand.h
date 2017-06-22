@@ -1,4 +1,4 @@
-#ifndef __STEREOONWITHCDCOMMAND_H__
+ï»¿#ifndef __STEREOONWITHCDCOMMAND_H__
 #define __STEREOONWITHCDCOMMAND_H__
 
 #include "Command.h"
@@ -8,7 +8,7 @@ class StereoOnWithCDCommand:public Command
 {
 private:
 	Stereo * stereo;
-	int preVolume;		//¼ÇÂ¼×ÅstereoÉÏÒ»´ÎµÄVolume£¬³·ÏúÒªÓÃµ½
+	int preVolume;		//è®°å½•ç€stereoä¸Šä¸€æ¬¡çš„Volumeï¼Œæ’¤é”€è¦ç”¨åˆ°
 
 	StereoOnWithCDCommand(){};
 public:

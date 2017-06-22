@@ -1,4 +1,4 @@
-#ifndef __WILDTURKEY_H__
+﻿#ifndef __WILDTURKEY_H__
 #define __WILDTURKEY_H__
 
 #include <iostream>

@@ -1,7 +1,7 @@
-#ifndef __DINERMENU_H__
+ï»¿#ifndef __DINERMENU_H__
 #define __DINERMENU_H__
 
-//²ÍÌü²Ëµ¥Àà
+//é¤å…èœå•ç±»
 
 #include <iostream>
 #include "MenuItem.h"
@@ -13,7 +13,7 @@ class DinerMenu
 public:
 	DinerMenu()
 	{
-		//Ìí¼ÓÄ¬ÈÏ²Ëµ¥Ïî
+		//æ·»åŠ é»˜è®¤èœå•é¡¹
 		addItem("Vegetarian BLT", "good", true, 2.99);
 		addItem("BLT", "very good", false, 2.99);
 		addItem("Soup of the day", "Yeah",false,3.29);
@@ -25,7 +25,7 @@ public:
 	{
 		if (numberOfItems >= MAX_ITEMS)
 		{
-			cout << "²Ëµ¥ÒÑÂú£¬ÎŞ·¨Ìí¼Ó" << endl;
+			cout << "èœå•å·²æ»¡ï¼Œæ— æ³•æ·»åŠ " << endl;
 		}
 		else
 		{
@@ -34,16 +34,16 @@ public:
 		}
 	}
 
-	//ºËĞÄ
+	//æ ¸å¿ƒ
 	Iterator* createIterator()
 	{
 		return new DinerMenuIterator(menuItems, &numberOfItems);
 	}
 
 private:
-	static const int MAX_ITEMS = 6; //²Ëµ¥Êı×éµÄ´óĞ¡
-	int numberOfItems = 0;			//µ±Ç°Êµ¼Ê²Ëµ¥Ïî¸öÊı
-	MenuItem menuItems[MAX_ITEMS];	//MAX_ITEMSËãÊÇ³£±äÁ¿
+	static const int MAX_ITEMS = 6; //èœå•æ•°ç»„çš„å¤§å°
+	int numberOfItems = 0;			//å½“å‰å®é™…èœå•é¡¹ä¸ªæ•°
+	MenuItem menuItems[MAX_ITEMS];	//MAX_ITEMSç®—æ˜¯å¸¸å˜é‡
 };
 
 #endif

@@ -1,4 +1,4 @@
-#ifndef __MALLARDDUCK_H__
+﻿#ifndef __MALLARDDUCK_H__
 #define __MALLARDDUCK_H__
 
 #include <iostream>

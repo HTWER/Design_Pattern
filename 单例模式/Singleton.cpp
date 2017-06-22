@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Singleton.h"
 using namespace std;
 
@@ -6,14 +6,14 @@ Singleton * Singleton::uniqueInstance = NULL;
 
 Singleton * Singleton::getIntance()			
 {
-	//×¢Òâ£ºÈç¹ûÊÇ¶àÏß³ÌµÄ³ÌĞò£¬¿ÉÄÜ»á´´½¨³ö¶à¸öÊµÀı£»
-	//½â¾ö·½°¸ÊÇÊ¹ÓÃÁÙ½çÇø
+	//æ³¨æ„ï¼šå¦‚æœæ˜¯å¤šçº¿ç¨‹çš„ç¨‹åºï¼Œå¯èƒ½ä¼šåˆ›å»ºå‡ºå¤šä¸ªå®ä¾‹ï¼›
+	//è§£å†³æ–¹æ¡ˆæ˜¯ä½¿ç”¨ä¸´ç•ŒåŒº
 	//if(uniqueInstance == NULL)
 	//{
-	//------------ÁÙ½çÇø------------
-	if (uniqueInstance == NULL)			//ÅĞ¶Ïµ±Ç°ÊÇ·ñ»¹Ã»ÓĞ´´½¨¹ıÊµÀı
+	//------------ä¸´ç•ŒåŒº------------
+	if (uniqueInstance == NULL)			//åˆ¤æ–­å½“å‰æ˜¯å¦è¿˜æ²¡æœ‰åˆ›å»ºè¿‡å®ä¾‹
 		uniqueInstance = new Singleton();
-	//------------ÁÙ½çÇø------------
+	//------------ä¸´ç•ŒåŒº------------
 	//}
 	return uniqueInstance;
 }

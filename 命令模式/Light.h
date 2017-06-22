@@ -1,20 +1,20 @@
-#ifndef __LIGHT_H__
+ï»¿#ifndef __LIGHT_H__
 #define __LIGHT_H__
 
 #include <iostream>
 using namespace std;
 
-//ÁªÏµÏÖÊµ¾ßÌå»úÆ÷£º¾ßÌåÉè±¸ÒªÓÃµ½µÄÒ»¸öÍâ²¿¶ÔÏó
+//è”ç³»ç°å®å…·ä½“æœºå™¨ï¼šå…·ä½“è®¾å¤‡è¦ç”¨åˆ°çš„ä¸€ä¸ªå¤–éƒ¨å¯¹è±¡
 class Light
 {
 public:
 	void on()
 	{
-		cout << "¿ªµÆ£¡" << endl;
+		cout << "å¼€ç¯ï¼" << endl;
 	}
 	void off()
 	{
-		cout << "¹ØµÆ£¡" << endl;
+		cout << "å…³ç¯ï¼" << endl;
 	}
 };
 

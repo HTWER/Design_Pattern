@@ -1,4 +1,4 @@
-#ifndef __STEREOOFFCOMMAND_H__
+﻿#ifndef __STEREOOFFCOMMAND_H__
 #define __STEREOOFFCOMMAND_H__
 
 #include "Command.h"

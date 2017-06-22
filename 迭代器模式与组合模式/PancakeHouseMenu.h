@@ -1,7 +1,7 @@
-#ifndef __PANCAKEHOUSEMENU_H__
+ï»¿#ifndef __PANCAKEHOUSEMENU_H__
 #define __PANCAKEHOUSEMENU_H__
 
-//²ÍÌü²Ëµ¥Àà
+//é¤å…èœå•ç±»
 
 #include "MenuItem.h"
 #include "PancakeHouseMenuIterator.h"
@@ -12,7 +12,7 @@ class PancakeHouseMenu
 public:
 	PancakeHouseMenu()
 	{
-		//Ìí¼ÓÄ¬ÈÏ²Ëµ¥Ïî
+		//æ·»åŠ é»˜è®¤èœå•é¡¹
 		addItem("Blueberry Pancakes","Pancakes made with fresh blueberries or strawberries",true,3.49);
 		addItem("Waffles", "Waffles,with your choice of blueberries or strawberries", true, 3.59);
 	}
@@ -24,7 +24,7 @@ public:
 		menuItems.push_back(menuItem);
 	}
 
-	//ºËĞÄ
+	//æ ¸å¿ƒ
 	Iterator* createIterator()
 	{
 		return new PancakeHouseMenuIterator(&menuItems);

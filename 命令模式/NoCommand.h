@@ -1,4 +1,4 @@
-#ifndef __NOCOMMAND_H__
+ï»¿#ifndef __NOCOMMAND_H__
 #define __NOCOMMAND_H__
 
 #include <iostream>
@@ -10,11 +10,11 @@ class NoCommand :public Command
 public:
 	void execute()
 	{
-		cout << "¿ÕÃüÁî£¬Ã»ÓÐÖ´ÐÐÈÎºÎ²Ù×÷" << endl;
+		cout << "ç©ºå‘½ä»¤ï¼Œæ²¡æœ‰æ‰§è¡Œä»»ä½•æ“ä½œ" << endl;
 	}
 	void undo()
 	{
-		cout << "¿ÕÃüÁî£¬ÎÞÐë³·Ïú" << endl;
+		cout << "ç©ºå‘½ä»¤ï¼Œæ— é¡»æ’¤é”€" << endl;
 	}
 };
 

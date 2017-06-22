@@ -1,4 +1,4 @@
-#ifndef __MACROCOMMAND_H__
+ï»¿#ifndef __MACROCOMMAND_H__
 #define __MACROCOMMAND_H__
 
 #include "Command.h"
@@ -6,8 +6,8 @@
 class MacroCommand:public Command
 {
 private:
-	Command* *commands;		//Ò»¸öÃüÁîÊı×é
-	int count;				//¼ÇÂ¼ÃüÁîÊı×éÖĞÃüÁîµÄ¸öÊı
+	Command* *commands;		//ä¸€ä¸ªå‘½ä»¤æ•°ç»„
+	int count;				//è®°å½•å‘½ä»¤æ•°ç»„ä¸­å‘½ä»¤çš„ä¸ªæ•°
 
 	MacroCommand(){}
 

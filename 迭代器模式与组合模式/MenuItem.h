@@ -1,7 +1,7 @@
-#ifndef __MENUITEM_H__
+ï»¿#ifndef __MENUITEM_H__
 #define __MENUITEM_H__
 
-//²Ëµ¥ÏîÀà
+//èœå•é¡¹ç±»
 
 #include <string>
 using namespace std;

@@ -1,4 +1,4 @@
-#ifndef __TEA_H__
+ï»¿#ifndef __TEA_H__
 #define __TEA_H__
 
 #include "CaffeineBeverage.h"
@@ -6,7 +6,7 @@
 class Tea:public CaffeineBeverage
 {
 public:
-	void brew() override	//µÚÒ»´ÎÊ¹ÓÃoverride
+	void brew() override	//ç¬¬ä¸€æ¬¡ä½¿ç”¨override
 	{
 		cout << "Steeping the tea" << endl;
 	}

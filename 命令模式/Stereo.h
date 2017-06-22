@@ -1,4 +1,4 @@
-#ifndef __STEREO_H__
+ï»¿#ifndef __STEREO_H__
 #define __STEREO_H__
 
 #include <iostream>
@@ -15,24 +15,24 @@ public:
 	}
 	void on()
 	{
-		cout << "´ò¿ªÒôÏìµçÔ´" << endl;
+		cout << "æ‰“å¼€éŸ³å“ç”µæº" << endl;
 	}
 	void off()
 	{
-		cout << "¹Ø±ÕÒôÏìµçÔ´" << endl;
+		cout << "å…³é—­éŸ³å“ç”µæº" << endl;
 	}
 	void setCD()
 	{
-		cout << "·ÅÈë¹âÅÌ" << endl;
+		cout << "æ”¾å…¥å…‰ç›˜" << endl;
 	}
 	void outCD()
 	{
-		cout << "µ¯³ö¹âÅÌ" << endl;
+		cout << "å¼¹å‡ºå…‰ç›˜" << endl;
 	}
 	void setVolume(int volume)
 	{
 		this->volume = volume;
-		cout << "ÉèÖÃÒôÁ¿Îª" << volume << endl;
+		cout << "è®¾ç½®éŸ³é‡ä¸º" << volume << endl;
 	}
 	int getVolume()
 	{

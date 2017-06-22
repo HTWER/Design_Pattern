@@ -1,10 +1,10 @@
-#ifndef __TURKET_H__
+ï»¿#ifndef __TURKET_H__
 #define __TURKET_H__
 
 class Turkey
 {
 public:
-	virtual ~Turkey(){};			//¹ÊÒâ²»¶¨Òåº¯Êı¿´»áÔõÑù,²»ĞĞ
+	virtual ~Turkey(){};			//æ•…æ„ä¸å®šä¹‰å‡½æ•°çœ‹ä¼šæ€æ ·,ä¸è¡Œ
 	virtual void gobble() = 0;
 	virtual void fly() = 0;	
 };

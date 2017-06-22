@@ -1,11 +1,11 @@
-#ifndef __DUCK_H__
+ï»¿#ifndef __DUCK_H__
 #define __DUCK_H__
 
-//³éÏóÀà
+//æŠ½è±¡ç±»
 class Duck
 {
 public:
-	virtual ~Duck(){}			//»ùÀàµÄÎö¹¹º¯Êı×îºÃĞ´³ÉĞéº¯Êı
+	virtual ~Duck(){}			//åŸºç±»çš„ææ„å‡½æ•°æœ€å¥½å†™æˆè™šå‡½æ•°
 	virtual void quack() = 0;
 	virtual void fly() = 0;
 };

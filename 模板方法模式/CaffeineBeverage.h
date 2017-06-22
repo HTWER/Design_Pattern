@@ -1,8 +1,8 @@
-#ifndef __CAFFEINEBEVERAGE_H__
+ï»¿#ifndef __CAFFEINEBEVERAGE_H__
 #define __CAFFEINEBEVERAGE_H__
 
-//Ä£°å·½·¨¾ÍÊÇÒ»¸ö ¿ØÖÆÆäËü·½·¨µ÷ÓÃË³Ðò µÄº¯Êý£¬Í¨³£Õâ¸ö·½·¨ÓÉ³¬ÀàÊµÏÖ£¬ÇÒÓÉ³¬Àà±£»¤£¬²»ÔÊÐí×ÓÀàÖØÐ´;
-//Õâ¸öº¯ÊýÖÐµÄÆäËü·½·¨¿ÉÒÔÊÇÐé·½·¨£¬¾ßÌåÊµÏÖ½»¸ø×ÓÀà;
+//æ¨¡æ¿æ–¹æ³•å°±æ˜¯ä¸€ä¸ª æŽ§åˆ¶å…¶å®ƒæ–¹æ³•è°ƒç”¨é¡ºåº çš„å‡½æ•°ï¼Œé€šå¸¸è¿™ä¸ªæ–¹æ³•ç”±è¶…ç±»å®žçŽ°ï¼Œä¸”ç”±è¶…ç±»ä¿æŠ¤ï¼Œä¸å…è®¸å­ç±»é‡å†™;
+//è¿™ä¸ªå‡½æ•°ä¸­çš„å…¶å®ƒæ–¹æ³•å¯ä»¥æ˜¯è™šæ–¹æ³•ï¼Œå…·ä½“å®žçŽ°äº¤ç»™å­ç±»;
 
 #include <iostream>
 using namespace std;
@@ -12,8 +12,8 @@ class CaffeineBeverage
 public:
 	virtual ~CaffeineBeverage(){}
 
-	//Õâ¸öº¯ÊýÊÇÄ£°åº¯Êý£¬ÀïÃæÉèÖÃºÃÁËÆäËü·½·¨µÄµ÷ÓÃ·½Ê½
-	//´Ëº¯ÊýÓ¦¸Ã½ûÖ¹ÖØÐ´£¬µ«ÊÇ±àÒëÆ÷ËÆºõ²»Ö§³Ö
+	//è¿™ä¸ªå‡½æ•°æ˜¯æ¨¡æ¿å‡½æ•°ï¼Œé‡Œé¢è®¾ç½®å¥½äº†å…¶å®ƒæ–¹æ³•çš„è°ƒç”¨æ–¹å¼
+	//æ­¤å‡½æ•°åº”è¯¥ç¦æ­¢é‡å†™ï¼Œä½†æ˜¯ç¼–è¯‘å™¨ä¼¼ä¹Žä¸æ”¯æŒ
 	void prepareRecipe()
 	{
 		boilWater();
@@ -22,11 +22,11 @@ public:
 		addCondiments();
 	}
 
-	//´¿Ðéº¯Êý£¬½»¸ø×ÓÀàÊµÏÖ
+	//çº¯è™šå‡½æ•°ï¼Œäº¤ç»™å­ç±»å®žçŽ°
 	virtual void brew() = 0;
 	virtual void addCondiments() = 0;
 
-	//Êµº¯Êý£¬ÔÚ³¬ÀàÍ³Ò»ÊµÏÖ£¬ËùÓÐµÄ×ÓÀà¶¼ÓÃµ½µÄÍ¬Ñù²Ù×÷
+	//å®žå‡½æ•°ï¼Œåœ¨è¶…ç±»ç»Ÿä¸€å®žçŽ°ï¼Œæ‰€æœ‰çš„å­ç±»éƒ½ç”¨åˆ°çš„åŒæ ·æ“ä½œ
 	void boilWater()
 	{
 		cout << "Boiling water" << endl;

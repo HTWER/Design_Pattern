@@ -1,10 +1,10 @@
-#include "Duck.h"
+ï»¿#include "Duck.h"
 #include "MallardDuck.h"
 #include "Turkey.h"
 #include "WildTurkey.h"
 #include "TurkeyAdapter.h"
 
-//ÀàËÆÓÚÒ»¸öÒÑ¾­¶¨ÖÆºÃµÄÏµÍ³£¬Õâ¸öÏµÍ³ÖÐµÄº¯ÊýÖ»ÈÏDuck
+//ç±»ä¼¼äºŽä¸€ä¸ªå·²ç»å®šåˆ¶å¥½çš„ç³»ç»Ÿï¼Œè¿™ä¸ªç³»ç»Ÿä¸­çš„å‡½æ•°åªè®¤Duck
 void testDuck(Duck * duck)
 {
 	duck->quack();

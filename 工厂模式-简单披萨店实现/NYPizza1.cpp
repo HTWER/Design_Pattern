@@ -6,7 +6,7 @@ using namespace std;
 
 NYPizza1::NYPizza1(PizzaIngredientFactory * iFac) :Pizza(iFac)
 {
-	name = "Å¦Ô¼1ºÅÅûÈø";
+	name = "çº½çº¦1å·æŠ«è¨";
 }
 
 NYPizza1::~NYPizza1()
@@ -15,22 +15,22 @@ NYPizza1::~NYPizza1()
 
 void NYPizza1::prepare()
 {
-	cout << name << "×¼±¸" << endl;
+	cout << name << "å‡†å¤‡" << endl;
 	dough = ingredientFactory->createDough();
 	sauce = ingredientFactory->createSauce();
 }
 
 void NYPizza1::bake()
 {
-	cout << name << "ºæ±º:" << dough->GetName() << " " << sauce->GetName() << endl;
+	cout << name << "çƒ˜ç„™:" << dough->GetName() << " " << sauce->GetName() << endl;
 }
 
 void NYPizza1::cut()
 {
-	cout << name << "ÇĞ¿é" << endl;
+	cout << name << "åˆ‡å—" << endl;
 }
 
 void NYPizza1::box()
 {
-	cout << name << "°ü×°" << endl;
+	cout << name << "åŒ…è£…" << endl;
 }

@@ -1,4 +1,4 @@
-#include "NYPizza2.h"
+Ôªø#include "NYPizza2.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 
 NYPizza2::NYPizza2(PizzaIngredientFactory * iFac) :Pizza(iFac)
 {
-	name = "≈¶‘º2∫≈≈˚»¯";
+	name = "Á∫ΩÁ∫¶2Âè∑Êä´Ëê®";
 }
 
 NYPizza2::~NYPizza2()
@@ -15,22 +15,22 @@ NYPizza2::~NYPizza2()
 
 void NYPizza2::prepare()
 {
-	cout << name << "◊º±∏" << endl;
+	cout << name << "ÂáÜÂ§á" << endl;
 	dough = ingredientFactory->createDough();
 	sauce = ingredientFactory->createSauce();
 }
 
 void NYPizza2::bake()
 {
-	cout << name << "∫Ê±∫:" << dough->GetName() << " " << sauce->GetName() << endl;
+	cout << name << "ÁÉòÁÑô:" << dough->GetName() << " " << sauce->GetName() << endl;
 }
 
 void NYPizza2::cut()
 {
-	cout << name << "«–øÈ" << endl;
+	cout << name << "ÂàáÂùó" << endl;
 }
 
 void NYPizza2::box()
 {
-	cout << name << "∞¸◊∞" << endl;
+	cout << name << "ÂåÖË£Ö" << endl;
 }

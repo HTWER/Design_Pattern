@@ -15,5 +15,11 @@ Singleton * Singleton::getIntance()
 		uniqueInstance = new Singleton();
 	//------------临界区------------
 	//}
+
+	/*
+	最佳做法是：
+	static Singleton uniqueInstance;	//绝妙，完美的利用了静态变量的特性
+	*/
+
 	return uniqueInstance;
 }

@@ -18,4 +18,4 @@
 - 装饰者模式
 
 ### 参考资料 ###
-- << HeadFirst设计模式 >> Eric Freeman；ElElisabeth Freeman
+《HeadFirst设计模式》,Eric Freeman；ElElisabeth Freeman

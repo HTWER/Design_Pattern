@@ -2,22 +2,16 @@
 #define __SOLDSTATE_H__
 
 #include "State.h"
-#include "GumballMachine.h"
 #include <iostream>
 using namespace std;
 
-class GumballMachine;
-
 class SoldState :public State
 {
-private:
-	GumballMachine* gumballMachine;		//...删掉，每次调用都传一遍
 public:
-	SoldState(GumballMachine* gumballMachine);	//... 删掉
-	void insertQuarter();
-	void ejectQuarter();
-	void turnCrank();
-	void dispense();
+	void insertQuarter(GumballMachine* gumballMachine);
+	void ejectQuarter(GumballMachine* gumballMachine);
+	void turnCrank(GumballMachine* gumballMachine);
+	void dispense(GumballMachine* gumballMachine);
 };
 
 

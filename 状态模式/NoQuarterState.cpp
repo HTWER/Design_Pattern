@@ -1,27 +1,24 @@
 #include "NoQuarterState.h"
+#include "GumballMachine.h"
+#include "HasQuarterState.h"
 
-NoQuarterState::NoQuarterState(GumballMachine* gumballMachine)
-{
-	this->gumballMachine = gumballMachine;
-}
-
-void NoQuarterState::insertQuarter()
+void NoQuarterState::insertQuarter(GumballMachine* gumballMachine)
 {
 	cout << "ÄãÍ¶ÈëÁËÓ²±Ò" << endl;
-	gumballMachine->setState(gumballMachine->hasQuarterState);
+	gumballMachine->setState(new HasQuarterState());
 }
 
-void NoQuarterState::ejectQuarter()
+void NoQuarterState::ejectQuarter(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }
 
-void NoQuarterState::turnCrank()
+void NoQuarterState::turnCrank(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }
 
-void NoQuarterState::dispense()
+void NoQuarterState::dispense(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }

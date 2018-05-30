@@ -7,34 +7,28 @@
 
 GumballMachine::GumballMachine(int numberGumballs)
 {
-	noQuarterState = new NoQuarterState(this);
-	hasQuarterState = new HasQuarterState(this);
-	soldState = new SoldState(this);
-	soldOutState = new SoldOutState(this);
-	winnerState = new WinnerState(this);
-
 	this->count = numberGumballs;
 	if (numberGumballs > 0)
-		state = noQuarterState;
+		state = new NoQuarterState();
 	else
-		state = soldOutState;
+		state = new SoldOutState();
 }
 
 //...  调出去
 void GumballMachine::insertQuarter()
 {
-	state->insertQuarter();
+	state->insertQuarter(this);
 }
 
 void GumballMachine::ejectQuarter()
 {
-	state->ejectQuarter();
+	state->ejectQuarter(this);
 }
 
 void GumballMachine::turnCrank()
 {
-	state->turnCrank();
-	state->dispense();		//...
+	state->turnCrank(this);
+	state->dispense(this);		//...
 }
 
 void GumballMachine::setState(State* state)		//放进State抽象类中...
@@ -52,6 +46,6 @@ void GumballMachine::releaseBall()		//放进具体State中...
 void GumballMachine::refill(int count)
 {
 	this->count = count;
-	state = noQuarterState;
+	state = new NoQuarterState();
 }
 ////////////////////////

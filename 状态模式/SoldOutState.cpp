@@ -1,26 +1,21 @@
 #include "SoldOutState.h"
 
-SoldOutState::SoldOutState(GumballMachine* gumballmachine)
-{
-	this->gumballmachine = gumballmachine;
-}
-
-void SoldOutState::insertQuarter()
+void SoldOutState::insertQuarter(GumballMachine* gumballMachine)
 {
 	cout << "ÒÑÊÛóÀ" << endl;
 }
 
-void SoldOutState::ejectQuarter()
+void SoldOutState::ejectQuarter(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }
 
-void SoldOutState::turnCrank()
+void SoldOutState::turnCrank(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }
 
-void SoldOutState::dispense()
+void SoldOutState::dispense(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }

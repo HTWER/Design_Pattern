@@ -6,18 +6,13 @@
 #include <iostream>
 using namespace std;
 
-class GumballMachine;
-
 class WinnerState :public State
 {
-private:
-	GumballMachine* gumballMachine;
 public:
-	WinnerState(GumballMachine* gumballMachine);
-	void insertQuarter();
-	void ejectQuarter();
-	void turnCrank();
-	void dispense();
+	void insertQuarter(GumballMachine* gumballMachine);
+	void ejectQuarter(GumballMachine* gumballMachine);
+	void turnCrank(GumballMachine* gumballMachine);
+	void dispense(GumballMachine* gumballMachine);
 };
 
 #endif

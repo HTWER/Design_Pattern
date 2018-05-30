@@ -13,57 +13,63 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\kernel">
+      <UniqueIdentifier>{f3451847-ecee-481f-b8a6-059a0e3fe1c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\kernel">
+      <UniqueIdentifier>{fb520732-da3d-4bc5-ab9b-66e214d434d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="State.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="NoQuarterState.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="GumballMachine.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="HasQuarterState.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\kernel</Filter>
     </ClInclude>
-    <ClInclude Include="SoldState.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="WinnerState.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="NoQuarterState.h">
+      <Filter>头文件\kernel</Filter>
     </ClInclude>
     <ClInclude Include="SoldOutState.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="SoldState.h">
+      <Filter>头文件\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>头文件\kernel</Filter>
     </ClInclude>
     <ClInclude Include="StateMachine.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="WinnerState.h">
+      <Filter>头文件\kernel</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="HasQuarterState.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="NoQuarterState.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="SoldState.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="WinnerState.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="GumballMachine.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="HasQuarterState.cpp">
+      <Filter>源文件\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="NoQuarterState.cpp">
+      <Filter>源文件\kernel</Filter>
+    </ClCompile>
     <ClCompile Include="SoldOutState.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="SoldState.cpp">
+      <Filter>源文件\kernel</Filter>
     </ClCompile>
     <ClCompile Include="StateMachine.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="WinnerState.cpp">
+      <Filter>源文件\kernel</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

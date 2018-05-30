@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9A877DC6-0EAA-46A5-833B-E90A9C087741}</ProjectGuid>
     <RootNamespace>状态模式</RootNamespace>
+    <ProjectName>X.状态模式</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

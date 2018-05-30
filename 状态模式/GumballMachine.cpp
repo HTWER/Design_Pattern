@@ -37,13 +37,6 @@ void GumballMachine::setState(State* state)
 	this->state->Enter(this);
 }
 
-void GumballMachine::releaseBall()		//放进具体State中...
-{
-	cout << "获得一颗..." << endl;
-	if (count != 0)		//...
-		count--;
-}
-
 void GumballMachine::refill(int count)
 {
 	this->count = count;

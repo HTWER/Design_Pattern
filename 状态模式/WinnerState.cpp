@@ -5,9 +5,9 @@
 
 void WinnerState::Enter(GumballMachine* gumballMachine)
 {
-	cout << "中奖" << endl;
-	gumballMachine->releaseBall();
-	gumballMachine->releaseBall();
+	cout << "中奖,获得两颗..." << endl;
+	if (gumballMachine->count >= 2)
+		gumballMachine->count = gumballMachine->count - 2;
 	if (gumballMachine->count > 0)
 		gumballMachine->setState(new NoQuarterState());
 	else{

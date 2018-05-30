@@ -8,10 +8,10 @@ using namespace std;
 class WinnerState :public State
 {
 public:
-	void Enter(GumballMachine* gumballMachine) override;
-	void insertQuarter(GumballMachine* gumballMachine) override;
-	void ejectQuarter(GumballMachine* gumballMachine) override;
-	void turnCrank(GumballMachine* gumballMachine) override;
+	void Enter(StateMachine* stateMachine) override;
+	void insertQuarter(StateMachine* stateMachine) override;
+	void ejectQuarter(StateMachine* stateMachine) override;
+	void turnCrank(StateMachine* stateMachine) override;
 };
 
 #endif

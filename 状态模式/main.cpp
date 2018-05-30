@@ -1,4 +1,7 @@
 #include "GumballMachine.h"
+#include <iostream>
+
+using namespace std;
 
 int main()
 {

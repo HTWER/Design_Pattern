@@ -2,32 +2,34 @@
 #include "GumballMachine.h"
 #include "NoQuarterState.h"
 #include "SoldOutState.h"
+#include "StateMachine.h"
 
-void SoldState::Enter(GumballMachine* gumballMachine)
+void SoldState::Enter(StateMachine* stateMachine)
 {
+	GumballMachine* gumballMachine = (GumballMachine*)(stateMachine->object);
 	cout << "获得一颗..." << endl;
 	if (gumballMachine->count > 0)
 		gumballMachine->count--;
 	if (gumballMachine->count > 0)
-		gumballMachine->setState(new NoQuarterState());
+		stateMachine->setState(new NoQuarterState());
 	else
 	{
 		cout << "已放出最后一颗！" << endl;
-		gumballMachine->setState(new SoldOutState());
+		stateMachine->setState(new SoldOutState());
 	}
 }
 
-void SoldState::insertQuarter(GumballMachine* gumballMachine)
+void SoldState::insertQuarter(StateMachine* stateMachine)
 {
 	cout << "操作错误" << endl;
 }
 
-void SoldState::ejectQuarter(GumballMachine* gumballMachine)
+void SoldState::ejectQuarter(StateMachine* stateMachine)
 {
 	cout << "操作错误" << endl;
 }
 
-void SoldState::turnCrank(GumballMachine* gumballMachine)
+void SoldState::turnCrank(StateMachine* stateMachine)
 {
 	cout << "操作错误" << endl;
 }

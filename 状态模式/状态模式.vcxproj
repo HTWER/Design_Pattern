@@ -70,6 +70,7 @@
     <ClInclude Include="SoldOutState.h" />
     <ClInclude Include="SoldState.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="StateMachine.h" />
     <ClInclude Include="WinnerState.h" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +80,7 @@
     <ClCompile Include="NoQuarterState.cpp" />
     <ClCompile Include="SoldOutState.cpp" />
     <ClCompile Include="SoldState.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
     <ClCompile Include="WinnerState.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

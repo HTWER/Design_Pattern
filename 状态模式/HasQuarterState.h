@@ -11,9 +11,9 @@ class HasQuarterState:public State
 {
 public:
 	HasQuarterState();
-	void insertQuarter(GumballMachine* gumballMachine) override;
-	void ejectQuarter(GumballMachine* gumballMachine) override;
-	void turnCrank(GumballMachine* gumballMachine) override;
+	void insertQuarter(StateMachine* stateMachine) override;
+	void ejectQuarter(StateMachine* stateMachine) override;
+	void turnCrank(StateMachine* stateMachine) override;
 };
 
 #endif

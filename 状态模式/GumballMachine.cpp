@@ -4,42 +4,35 @@
 #include "SoldState.h"
 #include "SoldOutState.h"
 #include "WinnerState.h"
+#include "StateMachine.h"
 
 GumballMachine::GumballMachine(int numberGumballs)
 {
 	this->count = numberGumballs;
+	this->stateMachine = new StateMachine(this);
 	if (numberGumballs > 0)
-		state = new NoQuarterState();
+		this->stateMachine->state = new NoQuarterState();
 	else
-		state = new SoldOutState();
+		this->stateMachine->state = new SoldOutState();
 }
 
-//...  µ÷³öÈ¥
 void GumballMachine::insertQuarter()
 {
-	state->insertQuarter(this);
+	stateMachine->state->insertQuarter(this->stateMachine);
 }
 
 void GumballMachine::ejectQuarter()
 {
-	state->ejectQuarter(this);
+	this->stateMachine->state->ejectQuarter(this->stateMachine);
 }
 
 void GumballMachine::turnCrank()
 {
-	state->turnCrank(this);
-}
-
-void GumballMachine::setState(State* state)
-{
-	this->state->Exit(this);
-	this->state = state;
-	this->state->Enter(this);
+	this->stateMachine->state->turnCrank(this->stateMachine);
 }
 
 void GumballMachine::refill(int count)
 {
 	this->count = count;
-	state = new NoQuarterState();
+	this->stateMachine->state = new NoQuarterState();
 }
-////////////////////////

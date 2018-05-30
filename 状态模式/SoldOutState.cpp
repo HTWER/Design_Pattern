@@ -14,8 +14,3 @@ void SoldOutState::turnCrank(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }
-
-void SoldOutState::dispense(GumballMachine* gumballMachine)
-{
-	cout << "²Ù×÷´íÎó" << endl;
-}

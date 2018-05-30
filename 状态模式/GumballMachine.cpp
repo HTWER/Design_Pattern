@@ -28,12 +28,13 @@ void GumballMachine::ejectQuarter()
 void GumballMachine::turnCrank()
 {
 	state->turnCrank(this);
-	state->dispense(this);		//...
 }
 
-void GumballMachine::setState(State* state)		//放进State抽象类中...
+void GumballMachine::setState(State* state)
 {
+	this->state->Exit(this);
 	this->state = state;
+	this->state->Enter(this);
 }
 
 void GumballMachine::releaseBall()		//放进具体State中...

@@ -29,8 +29,3 @@ void HasQuarterState::turnCrank(GumballMachine* gumballMachine)
 	else
 		gumballMachine->setState(new SoldState());
 }
-
-void HasQuarterState::dispense(GumballMachine* gumballMachine)
-{
-	cout << "²Ù×÷´íÎó" << endl;
-}

@@ -1,10 +1,10 @@
 #ifndef __GUMBALLMACHINE_H__
 #define __GUMBALLMACHINE_H__
 
-class State;
-
 #include <iostream>
 using namespace std;
+
+class State;
 
 class GumballMachine		//²ð¿ª
 {

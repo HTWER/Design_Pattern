@@ -17,8 +17,3 @@ void NoQuarterState::turnCrank(GumballMachine* gumballMachine)
 {
 	cout << "²Ù×÷´íÎó" << endl;
 }
-
-void NoQuarterState::dispense(GumballMachine* gumballMachine)
-{
-	cout << "²Ù×÷´íÎó" << endl;
-}

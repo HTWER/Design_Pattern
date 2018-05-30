@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "注意事项", "注意事�
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "状态模式", "状态模式\状态模式.vcxproj", "{9A877DC6-0EAA-46A5-833B-E90A9C087741}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -74,6 +76,10 @@ Global
 		{55395193-3E02-458E-898B-44306FCC969C}.Debug|Win32.Build.0 = Debug|Win32
 		{55395193-3E02-458E-898B-44306FCC969C}.Release|Win32.ActiveCfg = Release|Win32
 		{55395193-3E02-458E-898B-44306FCC969C}.Release|Win32.Build.0 = Release|Win32
+		{9A877DC6-0EAA-46A5-833B-E90A9C087741}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A877DC6-0EAA-46A5-833B-E90A9C087741}.Debug|Win32.Build.0 = Debug|Win32
+		{9A877DC6-0EAA-46A5-833B-E90A9C087741}.Release|Win32.ActiveCfg = Release|Win32
+		{9A877DC6-0EAA-46A5-833B-E90A9C087741}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,7 +9,7 @@ public:
 	void* object;
 	State* state;
 	StateMachine(void* object);
-	void setState(State* state);
+	void changeState(State* state);
 };
 
 #endif

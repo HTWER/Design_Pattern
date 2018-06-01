@@ -1,14 +1,19 @@
 #include "StateMachine.h"
 #include "State.h"
 
+#ifndef NULL
+#define NULL ((void*)0)
+#endif
+
 StateMachine::StateMachine(void* object)
 {
 	this->object = object;
 }
 
-void StateMachine::setState(State* state)
+void StateMachine::changeState(State* state)
 {
-	this->state->Exit(this);
+	if (state!=NULL)
+		this->state->Exit(this);
 	this->state = state;
 	this->state->Enter(this);
 }

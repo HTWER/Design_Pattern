@@ -13,24 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\虚拟代理">
+      <UniqueIdentifier>{466f0173-b206-49f9-970f-0afbc7b50527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\虚拟代理">
+      <UniqueIdentifier>{63787cd9-6429-4f4a-99a6-8c25e935b325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\保护代理">
+      <UniqueIdentifier>{b35aade2-56fd-4842-8e5a-bbebcb2fb1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\保护代理">
+      <UniqueIdentifier>{cc49bc69-dd1b-42ab-8413-d7e470b8a2b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ImageProxy.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Image.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\虚拟代理</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProxy.h">
+      <Filter>头文件\虚拟代理</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonBean.h">
+      <Filter>头文件\保护代理</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonBeanImpl.h">
+      <Filter>头文件\保护代理</Filter>
+    </ClInclude>
+    <ClInclude Include="OwnerProxy.h">
+      <Filter>头文件\保护代理</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ImageProxy.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Image.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\虚拟代理</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="ImageProxy.cpp">
+      <Filter>源文件\虚拟代理</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonBeanImpl.cpp">
+      <Filter>源文件\保护代理</Filter>
+    </ClCompile>
+    <ClCompile Include="OwnerProxy.cpp">
+      <Filter>源文件\保护代理</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonBean.cpp">
+      <Filter>源文件\保护代理</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

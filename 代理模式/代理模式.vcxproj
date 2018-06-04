@@ -19,8 +19,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -67,11 +67,17 @@
   <ItemGroup>
     <ClInclude Include="Image.h" />
     <ClInclude Include="ImageProxy.h" />
+    <ClInclude Include="OwnerProxy.h" />
+    <ClInclude Include="PersonBean.h" />
+    <ClInclude Include="PersonBeanImpl.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="ImageProxy.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OwnerProxy.cpp" />
+    <ClCompile Include="PersonBean.cpp" />
+    <ClCompile Include="PersonBeanImpl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

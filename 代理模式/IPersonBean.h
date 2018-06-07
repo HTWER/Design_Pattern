@@ -1,10 +1,10 @@
-#ifndef __PERSONBEAN_H__
-#define __PERSONBEAN_H__
+#ifndef __IPERSONBEAN_H__
+#define __IPERSONBEAN_H__
 
 #include <iostream>
 using namespace std;
 
-class PersonBean
+class IPersonBean
 {
 public:
 	virtual string getName() = 0;
@@ -17,7 +17,7 @@ public:
 	virtual void setInterests(string interests) = 0;
 	virtual void setHotOrNotRating(int rating) = 0;
 
-	static PersonBean* Create(string type, PersonBean* realPersonBean);
+	static IPersonBean* Create(string type, IPersonBean* realPersonBean);
 };
 
 #endif

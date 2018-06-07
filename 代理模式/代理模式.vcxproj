@@ -67,16 +67,18 @@
   <ItemGroup>
     <ClInclude Include="Image.h" />
     <ClInclude Include="ImageProxy.h" />
+    <ClInclude Include="NonOwnerProxy.h" />
     <ClInclude Include="OwnerProxy.h" />
-    <ClInclude Include="PersonBean.h" />
+    <ClInclude Include="IPersonBean.h" />
     <ClInclude Include="PersonBeanImpl.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="ImageProxy.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NonOwnerProxy.cpp" />
     <ClCompile Include="OwnerProxy.cpp" />
-    <ClCompile Include="PersonBean.cpp" />
+    <ClCompile Include="IPersonBean.cpp" />
     <ClCompile Include="PersonBeanImpl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

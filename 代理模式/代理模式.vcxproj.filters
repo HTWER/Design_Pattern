@@ -33,13 +33,16 @@
     <ClInclude Include="ImageProxy.h">
       <Filter>头文件\虚拟代理</Filter>
     </ClInclude>
-    <ClInclude Include="PersonBean.h">
-      <Filter>头文件\保护代理</Filter>
-    </ClInclude>
     <ClInclude Include="PersonBeanImpl.h">
       <Filter>头文件\保护代理</Filter>
     </ClInclude>
     <ClInclude Include="OwnerProxy.h">
+      <Filter>头文件\保护代理</Filter>
+    </ClInclude>
+    <ClInclude Include="NonOwnerProxy.h">
+      <Filter>头文件\保护代理</Filter>
+    </ClInclude>
+    <ClInclude Include="IPersonBean.h">
       <Filter>头文件\保护代理</Filter>
     </ClInclude>
   </ItemGroup>
@@ -59,7 +62,10 @@
     <ClCompile Include="OwnerProxy.cpp">
       <Filter>源文件\保护代理</Filter>
     </ClCompile>
-    <ClCompile Include="PersonBean.cpp">
+    <ClCompile Include="IPersonBean.cpp">
+      <Filter>源文件\保护代理</Filter>
+    </ClCompile>
+    <ClCompile Include="NonOwnerProxy.cpp">
       <Filter>源文件\保护代理</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,12 +1,12 @@
 #ifndef __PERSONBEANIMPL_H__
 #define __PERSONBEANIMPL_H__
 
-#include "PersonBean.h"
+#include "IPersonBean.h"
 
 #include <iostream>
 using namespace std;
 
-class PersonBeanImpl:public PersonBean
+class PersonBeanImpl:public IPersonBean
 {
 private:
 	string name;
@@ -15,6 +15,7 @@ private:
 	int rating;
 	int ratingCount;
 public:
+	PersonBeanImpl();
 	string getName() override;
 	string getGender() override;
 	string getInterests() override;

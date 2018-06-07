@@ -1,6 +1,6 @@
 #include "OwnerProxy.h"
 
-OwnerProxy::OwnerProxy(PersonBean* realPersonBean)
+OwnerProxy::OwnerProxy(IPersonBean* realPersonBean)
 {
 	this->realPersonBean = realPersonBean;
 }

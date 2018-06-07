@@ -1,15 +1,15 @@
-#ifndef __OWNERPROXY_H__
-#define __OWNERPROXY_H__
+#ifndef __NONOWNERPROXY_H__
+#define __NONOWNERPROXY_H__
 
 #include "IPersonBean.h"
 
-class OwnerProxy :public IPersonBean
+class NonOwnerProxy :public IPersonBean
 {
 private:
 	IPersonBean* realPersonBean;
-	OwnerProxy();
+	NonOwnerProxy();
 public:
-	OwnerProxy(IPersonBean* realPersonBean);
+	NonOwnerProxy(IPersonBean* realPersonBean);
 	string getName() override;
 	string getGender() override;
 	string getInterests() override;

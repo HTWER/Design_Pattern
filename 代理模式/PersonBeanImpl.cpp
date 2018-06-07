@@ -1,5 +1,11 @@
 #include "PersonBeanImpl.h"
 
+PersonBeanImpl::PersonBeanImpl()
+{
+	rating = 0;
+	ratingCount = 0;
+}
+
 string PersonBeanImpl::getName()
 {
 	return name;

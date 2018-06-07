@@ -1,16 +1,13 @@
 ﻿#ifndef __CURRENTCONDITIONDISPLAY_H__
 #define __CURRENTCONDITIONDISPLAY_H__
 
-#include "Observer.h"
-#include "DisplayElement.h"
+#include "IObserver.h"
+#include "IDisplay.h"
 
 //显示板，具有两个接口类
-class CurrentConditionDisplay:public Observer,DisplayElement
+class CurrentConditionDisplay :public IObserver, IDisplay
 {
 public:
-	CurrentConditionDisplay();
-	~CurrentConditionDisplay();
-
 	//数据
 	float m_temp;
 	float m_humidity;

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Impl">
+      <UniqueIdentifier>{0fd6c86b-c6f0-46af-a06d-1e4731e7cb85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Impl">
+      <UniqueIdentifier>{92e802da-4dde-4ab8-8a30-d17cd18f67bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\工厂">
+      <UniqueIdentifier>{8acc8a50-ad7f-441d-b6c4-4e632e6bcf66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\工厂">
+      <UniqueIdentifier>{b409a184-4aef-4db5-9452-7f2fbbc884c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\适配器">
+      <UniqueIdentifier>{c535c412-f335-4db7-8bfd-6320b1f5baad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\适配器">
+      <UniqueIdentifier>{b1da4f50-3d69-443e-977e-c394f2e23679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\装饰者">
+      <UniqueIdentifier>{f7edbfbf-bedd-4beb-add7-91c6a3de7d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\装饰者">
+      <UniqueIdentifier>{a53dc31f-a50d-4e1f-b8e7-876e5293a159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\组合">
+      <UniqueIdentifier>{aebcc2bc-a40e-49ec-a56d-4d9cd0a91516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\组合">
+      <UniqueIdentifier>{56c52f53-ec32-4bf0-980a-51c2d5169f63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\观察者">
+      <UniqueIdentifier>{2aacda8b-fd5f-42f0-8d59-07a3450d41d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\观察者">
+      <UniqueIdentifier>{47e08e93-8991-4d17-b50d-e20be85a3790}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IQuackable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MallardDuck.h">
+      <Filter>头文件\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="RedheadDuck.h">
+      <Filter>头文件\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="DuckCall.h">
+      <Filter>头文件\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="RubberDuck.h">
+      <Filter>头文件\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="DuckSimulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractDuckFactory.h">
+      <Filter>头文件\工厂</Filter>
+    </ClInclude>
+    <ClInclude Include="DuckFactory.h">
+      <Filter>头文件\工厂</Filter>
+    </ClInclude>
+    <ClInclude Include="GooseAdapter2Duck.h">
+      <Filter>头文件\适配器</Filter>
+    </ClInclude>
+    <ClInclude Include="DuckDecorator.h">
+      <Filter>头文件\装饰者</Filter>
+    </ClInclude>
+    <ClInclude Include="DecoratingDuckFactory.h">
+      <Filter>头文件\工厂</Filter>
+    </ClInclude>
+    <ClInclude Include="Goose.h">
+      <Filter>头文件\适配器</Filter>
+    </ClInclude>
+    <ClInclude Include="Flock.h">
+      <Filter>头文件\组合</Filter>
+    </ClInclude>
+    <ClInclude Include="IObservable.h">
+      <Filter>头文件\观察者</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MallardDuck.cpp">
+      <Filter>源文件\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="RedheadDuck.cpp">
+      <Filter>源文件\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="DuckCall.cpp">
+      <Filter>源文件\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="RubberDuck.cpp">
+      <Filter>源文件\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="DuckSimulator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuckFactory.cpp">
+      <Filter>源文件\工厂</Filter>
+    </ClCompile>
+    <ClCompile Include="GooseAdapter2Duck.cpp">
+      <Filter>源文件\适配器</Filter>
+    </ClCompile>
+    <ClCompile Include="DuckDecorator.cpp">
+      <Filter>源文件\装饰者</Filter>
+    </ClCompile>
+    <ClCompile Include="DecoratingDuckFactory.cpp">
+      <Filter>源文件\工厂</Filter>
+    </ClCompile>
+    <ClCompile Include="Goose.cpp">
+      <Filter>源文件\适配器</Filter>
+    </ClCompile>
+    <ClCompile Include="Flock.cpp">
+      <Filter>源文件\组合</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

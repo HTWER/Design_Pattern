@@ -1,10 +1,10 @@
 ﻿#ifndef __STATISTICSDISPLAY_H__
 #define __STATISTICSDISPLAY_H__
 
-#include "Observer.h"
-#include "DisplayElement.h"
+#include "IObserver.h"
+#include "IDisplay.h"
 
-class StatisticsDisplay:public Observer,DisplayElement
+class StatisticsDisplay :public IObserver, IDisplay
 {
 public:
 	StatisticsDisplay();

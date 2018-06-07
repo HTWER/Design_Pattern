@@ -1,10 +1,10 @@
 ﻿#ifndef __WEATHERDATA_H__
 #define __WEATHERDATA_H__
 
-#include "Subject.h"
+#include "IObservable.h"
 
 //气象站例子
-class WeatherData:public Subject
+class WeatherData :public IObservable
 {
 public:
 	WeatherData();

@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AE4C9F1F-FEF7-42C1-B1ED-CDA257C72BAC}</ProjectGuid>
-    <RootNamespace>观察者模式</RootNamespace>
-    <ProjectName>2.观察者模式</ProjectName>
+    <ProjectGuid>{3E0AB4C4-A794-4699-972D-1D47A133501B}</ProjectGuid>
+    <RootNamespace>复合模式</RootNamespace>
+    <ProjectName>XII.复合模式</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -45,14 +45,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <Bscmake>
-      <PreserveSbr>true</PreserveSbr>
-    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -69,22 +65,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CurrentConditionDisplay.h" />
-    <ClInclude Include="DataPakeger.h" />
-    <ClInclude Include="IDisplay.h" />
-    <ClInclude Include="IObserver.h" />
-    <ClInclude Include="StatisticsDisplay.h" />
+    <ClInclude Include="AbstractDuckFactory.h" />
+    <ClInclude Include="DecoratingDuckFactory.h" />
+    <ClInclude Include="DuckCall.h" />
+    <ClInclude Include="DuckFactory.h" />
+    <ClInclude Include="DuckSimulator.h" />
+    <ClInclude Include="Flock.h" />
+    <ClInclude Include="Goose.h" />
+    <ClInclude Include="GooseAdapter2Duck.h" />
+    <ClInclude Include="MallardDuck.h" />
+    <ClInclude Include="IQuackable.h" />
+    <ClInclude Include="DuckDecorator.h" />
     <ClInclude Include="IObservable.h" />
-    <ClInclude Include="WeatherData.h" />
+    <ClInclude Include="RedheadDuck.h" />
+    <ClInclude Include="RubberDuck.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CurrentConditionDisplay.cpp" />
-    <ClCompile Include="IDisplay.cpp" />
+    <ClCompile Include="DecoratingDuckFactory.cpp" />
+    <ClCompile Include="DuckCall.cpp" />
+    <ClCompile Include="DuckFactory.cpp" />
+    <ClCompile Include="DuckSimulator.cpp" />
+    <ClCompile Include="Flock.cpp" />
+    <ClCompile Include="Goose.cpp" />
+    <ClCompile Include="GooseAdapter2Duck.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="IObserver.cpp" />
-    <ClCompile Include="StatisticsDisplay.cpp" />
-    <ClCompile Include="IObservable.cpp" />
-    <ClCompile Include="WeatherData.cpp" />
+    <ClCompile Include="MallardDuck.cpp" />
+    <ClCompile Include="DuckDecorator.cpp" />
+    <ClCompile Include="RedheadDuck.cpp" />
+    <ClCompile Include="RubberDuck.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

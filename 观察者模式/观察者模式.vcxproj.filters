@@ -13,51 +13,69 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\interface">
+      <UniqueIdentifier>{339fa5ce-a0e4-48bb-b100-f856cb37dc30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interface">
+      <UniqueIdentifier>{1d509449-f4e4-479b-8bea-e6850919ab7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interface\kernel">
+      <UniqueIdentifier>{68b6c4b0-9d9d-4438-b5d6-65dd3b32ab02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interface\kernel">
+      <UniqueIdentifier>{ce427dcf-1592-4756-85e2-4a6c614cfc90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\logic">
+      <UniqueIdentifier>{cb59335c-0fe2-4e65-b19f-992de7208950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\logic">
+      <UniqueIdentifier>{d744c73b-1ec3-4388-9ea6-8a27983a4b24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Subject.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Observer.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DisplayElement.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="DataPakeger.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="WeatherData.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="CurrentConditionDisplay.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="WeatherData.h">
+      <Filter>头文件\logic</Filter>
     </ClInclude>
     <ClInclude Include="StatisticsDisplay.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="IObserver.h">
+      <Filter>头文件\interface\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="IObservable.h">
+      <Filter>头文件\interface\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="IDisplay.h">
+      <Filter>头文件\interface</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Subject.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Observer.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="DisplayElement.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="WeatherData.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="CurrentConditionDisplay.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CurrentConditionDisplay.cpp">
+      <Filter>源文件\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="WeatherData.cpp">
+      <Filter>源文件\logic</Filter>
+    </ClCompile>
     <ClCompile Include="StatisticsDisplay.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="IObserver.cpp">
+      <Filter>源文件\interface\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="IObservable.cpp">
+      <Filter>源文件\interface\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="IDisplay.cpp">
+      <Filter>源文件\interface</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

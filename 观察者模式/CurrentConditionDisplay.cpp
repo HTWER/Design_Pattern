@@ -1,17 +1,7 @@
 ﻿#include "CurrentConditionDisplay.h"
+#include "DataPakeger.h"
 #include <iostream>
 using namespace std;
-
-
-CurrentConditionDisplay::CurrentConditionDisplay()
-{
-
-}
-
-
-CurrentConditionDisplay::~CurrentConditionDisplay()
-{
-}
 
 void CurrentConditionDisplay::update(DataPakeger data)
 {

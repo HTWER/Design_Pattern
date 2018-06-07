@@ -24,7 +24,7 @@ void WeatherData::notifyObserver()
 	data.pressure = m_pressure;
 
 	//开始推送
-	for (vector<Observer*>::iterator iter = observersList.begin(); iter != observersList.end();iter++)
+	for (vector<IObserver*>::iterator iter = observersList.begin(); iter != observersList.end(); iter++)
 	{
 		(*iter)->update(data);
 	}

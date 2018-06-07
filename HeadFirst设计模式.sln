@@ -32,6 +32,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X.状态模式", "状态模
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XI.代理模式", "代理模式\代理模式.vcxproj", "{F41C336A-35E7-4D4B-8955-E9AC06872A5C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XII.复合模式", "复合模式\复合模式.vcxproj", "{3E0AB4C4-A794-4699-972D-1D47A133501B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -86,6 +88,10 @@ Global
 		{F41C336A-35E7-4D4B-8955-E9AC06872A5C}.Debug|Win32.Build.0 = Debug|Win32
 		{F41C336A-35E7-4D4B-8955-E9AC06872A5C}.Release|Win32.ActiveCfg = Release|Win32
 		{F41C336A-35E7-4D4B-8955-E9AC06872A5C}.Release|Win32.Build.0 = Release|Win32
+		{3E0AB4C4-A794-4699-972D-1D47A133501B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E0AB4C4-A794-4699-972D-1D47A133501B}.Debug|Win32.Build.0 = Debug|Win32
+		{3E0AB4C4-A794-4699-972D-1D47A133501B}.Release|Win32.ActiveCfg = Release|Win32
+		{3E0AB4C4-A794-4699-972D-1D47A133501B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

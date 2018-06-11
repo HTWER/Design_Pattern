@@ -11,11 +11,11 @@ void SoldState::Enter(StateMachine* stateMachine)
 	if (gumballMachine->count > 0)
 		gumballMachine->count--;
 	if (gumballMachine->count > 0)
-		stateMachine->setState(new NoQuarterState());
+		stateMachine->changeState(new NoQuarterState());
 	else
 	{
 		cout << "已放出最后一颗！" << endl;
-		stateMachine->setState(new SoldOutState());
+		stateMachine->changeState(new SoldOutState());
 	}
 }
 

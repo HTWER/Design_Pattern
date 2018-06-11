@@ -23,3 +23,18 @@ void DuckDecorator::quack()
 	duck->quack();
 	numberOfQuacks++;
 }
+
+void DuckDecorator::registerObserver(IObserver * o)
+{
+	duck->registerObserver(o);
+}
+
+void DuckDecorator::removeObserver(IObserver * o)
+{
+	duck->removeObserver(o);
+}
+
+void DuckDecorator::notifyObserver()
+{
+
+}

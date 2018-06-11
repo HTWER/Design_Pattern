@@ -14,6 +14,9 @@ public:
 	static int numberOfQuacks;
 	static int getQuacks();
 	void quack() override;
+	void registerObserver(IObserver * o) override;
+	void removeObserver(IObserver * o) override;
+	void notifyObserver() override;
 };
 
 

@@ -4,6 +4,7 @@
 #include "DuckDecorator.h"
 #include "AbstractDuckFactory.h"
 #include "Flock.h"
+#include "Quackolohist.h"
 #include <iostream>
 using namespace std;
 
@@ -30,6 +31,9 @@ void DuckSimulator::simulate(AbstractDuckFactory* duckFactory)
 	flockOfMallards->add(mallardThree);
 	flockOfMallards->add(mallardFour);
 	flockOfMallards->add(mallardDuck);
+
+	Quackolohist* quackologist = new Quackolohist();
+	flockOfDucks->registerObserver(quackologist);
 
 	cout << "\nDuck Simulator1" << endl;
 	simulate(flockOfDucks);

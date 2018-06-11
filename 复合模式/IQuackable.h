@@ -1,9 +1,9 @@
-#ifndef __QUACKABLE_H__
+﻿#ifndef __QUACKABLE_H__
 #define __QUACKABLE_H__
 
 #include "IObservable.h"
 
-class IQuackable:public IObservable		//使得IQuackable可以被观察
+class IQuackable :public IObservable
 {
 public:
 	virtual ~IQuackable(){};

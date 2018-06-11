@@ -12,6 +12,9 @@ private:
 public:
 	void add(IQuackable* quacker);
 	void quack() override;
+	void registerObserver(IObserver * o) override;
+	void removeObserver(IObserver * o) override;
+	void notifyObserver() override;
 };
 
 #endif

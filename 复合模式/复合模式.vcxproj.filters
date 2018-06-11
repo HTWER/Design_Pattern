@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="头文件\Impl">
-      <UniqueIdentifier>{0fd6c86b-c6f0-46af-a06d-1e4731e7cb85}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\Impl">
-      <UniqueIdentifier>{92e802da-4dde-4ab8-8a30-d17cd18f67bc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\工厂">
       <UniqueIdentifier>{8acc8a50-ad7f-441d-b6c4-4e632e6bcf66}</UniqueIdentifier>
     </Filter>
@@ -43,11 +37,17 @@
     <Filter Include="源文件\组合">
       <UniqueIdentifier>{56c52f53-ec32-4bf0-980a-51c2d5169f63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\impl">
+      <UniqueIdentifier>{0fd6c86b-c6f0-46af-a06d-1e4731e7cb85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\impl">
+      <UniqueIdentifier>{92e802da-4dde-4ab8-8a30-d17cd18f67bc}</UniqueIdentifier>
+    </Filter>
     <Filter Include="头文件\观察者">
       <UniqueIdentifier>{2aacda8b-fd5f-42f0-8d59-07a3450d41d5}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\观察者">
-      <UniqueIdentifier>{47e08e93-8991-4d17-b50d-e20be85a3790}</UniqueIdentifier>
+      <UniqueIdentifier>{34e6a7fc-15c7-4957-bb64-b84aa3c678c0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -55,16 +55,16 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MallardDuck.h">
-      <Filter>头文件\Impl</Filter>
+      <Filter>头文件\impl</Filter>
     </ClInclude>
     <ClInclude Include="RedheadDuck.h">
-      <Filter>头文件\Impl</Filter>
+      <Filter>头文件\impl</Filter>
     </ClInclude>
     <ClInclude Include="DuckCall.h">
-      <Filter>头文件\Impl</Filter>
+      <Filter>头文件\impl</Filter>
     </ClInclude>
     <ClInclude Include="RubberDuck.h">
-      <Filter>头文件\Impl</Filter>
+      <Filter>头文件\impl</Filter>
     </ClInclude>
     <ClInclude Include="DuckSimulator.h">
       <Filter>头文件</Filter>
@@ -93,19 +93,28 @@
     <ClInclude Include="IObservable.h">
       <Filter>头文件\观察者</Filter>
     </ClInclude>
+    <ClInclude Include="QuackObservable.h">
+      <Filter>头文件\观察者</Filter>
+    </ClInclude>
+    <ClInclude Include="IObserver.h">
+      <Filter>头文件\观察者</Filter>
+    </ClInclude>
+    <ClInclude Include="Quackolohist.h">
+      <Filter>头文件\观察者</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MallardDuck.cpp">
-      <Filter>源文件\Impl</Filter>
+      <Filter>源文件\impl</Filter>
     </ClCompile>
     <ClCompile Include="RedheadDuck.cpp">
-      <Filter>源文件\Impl</Filter>
+      <Filter>源文件\impl</Filter>
     </ClCompile>
     <ClCompile Include="DuckCall.cpp">
-      <Filter>源文件\Impl</Filter>
+      <Filter>源文件\impl</Filter>
     </ClCompile>
     <ClCompile Include="RubberDuck.cpp">
-      <Filter>源文件\Impl</Filter>
+      <Filter>源文件\impl</Filter>
     </ClCompile>
     <ClCompile Include="DuckSimulator.cpp">
       <Filter>源文件</Filter>
@@ -130,6 +139,15 @@
     </ClCompile>
     <ClCompile Include="Flock.cpp">
       <Filter>源文件\组合</Filter>
+    </ClCompile>
+    <ClCompile Include="IObservable.cpp">
+      <Filter>源文件\观察者</Filter>
+    </ClCompile>
+    <ClCompile Include="QuackObservable.cpp">
+      <Filter>源文件\观察者</Filter>
+    </ClCompile>
+    <ClCompile Include="Quackolohist.cpp">
+      <Filter>源文件\观察者</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -39,12 +39,16 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -73,10 +77,13 @@
     <ClInclude Include="Flock.h" />
     <ClInclude Include="Goose.h" />
     <ClInclude Include="GooseAdapter2Duck.h" />
+    <ClInclude Include="IObservable.h" />
     <ClInclude Include="MallardDuck.h" />
     <ClInclude Include="IQuackable.h" />
     <ClInclude Include="DuckDecorator.h" />
-    <ClInclude Include="IObservable.h" />
+    <ClInclude Include="IObserver.h" />
+    <ClInclude Include="QuackObservable.h" />
+    <ClInclude Include="Quackolohist.h" />
     <ClInclude Include="RedheadDuck.h" />
     <ClInclude Include="RubberDuck.h" />
   </ItemGroup>
@@ -88,9 +95,12 @@
     <ClCompile Include="Flock.cpp" />
     <ClCompile Include="Goose.cpp" />
     <ClCompile Include="GooseAdapter2Duck.cpp" />
+    <ClCompile Include="IObservable.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MallardDuck.cpp" />
     <ClCompile Include="DuckDecorator.cpp" />
+    <ClCompile Include="QuackObservable.cpp" />
+    <ClCompile Include="Quackolohist.cpp" />
     <ClCompile Include="RedheadDuck.cpp" />
     <ClCompile Include="RubberDuck.cpp" />
   </ItemGroup>

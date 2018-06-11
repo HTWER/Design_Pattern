@@ -20,7 +20,7 @@ public:
 	void measurementsChanged();
 
 	//重写通知函数，因为可能因具体对象的不同导致需要传输数据的不同
-	void notifyObserver();
+	void notifyObserver() override;
 };
 
 

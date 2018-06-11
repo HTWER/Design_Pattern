@@ -6,7 +6,7 @@
 void NoQuarterState::insertQuarter(StateMachine* stateMachine)
 {
 	cout << "ÄãÍ¶ÈëÁËÓ²±Ò" << endl;
-	stateMachine->setState(new HasQuarterState());
+	stateMachine->changeState(new HasQuarterState());
 }
 
 void NoQuarterState::ejectQuarter(StateMachine* stateMachine)

@@ -18,7 +18,7 @@ void HasQuarterState::insertQuarter(StateMachine* stateMachine)
 void HasQuarterState::ejectQuarter(StateMachine* stateMachine)
 {
 	cout << "退还硬币" << endl;
-	stateMachine->setState(new NoQuarterState());
+	stateMachine->changeState(new NoQuarterState());
 }
 
 void HasQuarterState::turnCrank(StateMachine* stateMachine)
@@ -27,7 +27,7 @@ void HasQuarterState::turnCrank(StateMachine* stateMachine)
 	cout << "转动把柄..." << endl;
 	int winner = rand() % 10;
 	if (winner == 0 && gumballMachine->count > 1)
-		stateMachine->setState(new WinnerState());
+		stateMachine->changeState(new WinnerState());
 	else
-		stateMachine->setState(new SoldState());
+		stateMachine->changeState(new SoldState());
 }

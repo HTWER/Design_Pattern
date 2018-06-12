@@ -25,5 +25,6 @@ void Flock::removeObserver(IObserver * o)
 
 void Flock::notifyObserver()
 {
-
+	for each (IQuackable* var in quackers)
+		var->notifyObserver();
 }

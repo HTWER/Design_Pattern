@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\model">
+      <UniqueIdentifier>{c3804353-02f7-458a-9054-2c76bd41ddd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\other">
+      <UniqueIdentifier>{88d2a0e3-2e9e-47d6-8060-acda8bfa8743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\model">
+      <UniqueIdentifier>{171f21fc-0d45-4a6b-80c2-eb238eb63c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\other">
+      <UniqueIdentifier>{ba11b4a8-7cd6-421a-b520-1d23c3fca62c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\view">
+      <UniqueIdentifier>{25990224-9e6b-4acf-9559-302cdf8587bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\view">
+      <UniqueIdentifier>{5d342fbf-d3fe-4cea-b748-aa00089a406c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\controller">
+      <UniqueIdentifier>{9529bd11-ff12-4839-965a-1dace8e0384a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\controller">
+      <UniqueIdentifier>{a7633e55-ea74-47b7-a207-b4706c1f6b60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MVC.h">
+      <Filter>头文件\other</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件\other</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件\other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件\other</Filter>
+    </ClInclude>
+    <ClInclude Include="IBeatModel.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="BeatModel.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="MVCDlg.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="IController.h">
+      <Filter>头文件\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="BeatController.h">
+      <Filter>头文件\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="IBeatObserver.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+    <ClInclude Include="IBPMObserver.h">
+      <Filter>头文件\view</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MVC.cpp">
+      <Filter>源文件\other</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件\other</Filter>
+    </ClCompile>
+    <ClCompile Include="MVCDlg.cpp">
+      <Filter>源文件\view</Filter>
+    </ClCompile>
+    <ClCompile Include="BeatModel.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="BeatController.cpp">
+      <Filter>源文件\controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MVC.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MVC.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MVC.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

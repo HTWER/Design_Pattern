@@ -11,9 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3E0AB4C4-A794-4699-972D-1D47A133501B}</ProjectGuid>
-    <RootNamespace>复合模式</RootNamespace>
-    <ProjectName>XII.复合模式</ProjectName>
+    <ProjectGuid>{50CCD38A-8D0E-4A5D-98CB-E15650AD8154}</ProjectGuid>
+    <RootNamespace>MVC</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>XIII.MVC</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -21,6 +22,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -28,6 +30,7 @@
     <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -40,75 +43,104 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(IncludePath)</IncludePath>
-    <SourcePath>$(SourcePath)</SourcePath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <Bscmake>
-      <PreserveSbr>true</PreserveSbr>
-    </Bscmake>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractDuckFactory.h" />
-    <ClInclude Include="DecoratingDuckFactory.h" />
-    <ClInclude Include="DuckCall.h" />
-    <ClInclude Include="DuckFactory.h" />
-    <ClInclude Include="DuckSimulator.h" />
-    <ClInclude Include="Flock.h" />
-    <ClInclude Include="Goose.h" />
-    <ClInclude Include="GooseAdapter2Duck.h" />
-    <ClInclude Include="IObservable.h" />
-    <ClInclude Include="MallardDuck.h" />
-    <ClInclude Include="IQuackable.h" />
-    <ClInclude Include="DuckDecorator.h" />
-    <ClInclude Include="IObserver.h" />
-    <ClInclude Include="QuackObservable.h" />
-    <ClInclude Include="Quackolohist.h" />
-    <ClInclude Include="RedheadDuck.h" />
-    <ClInclude Include="RubberDuck.h" />
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DecoratingDuckFactory.cpp" />
-    <ClCompile Include="DuckCall.cpp" />
-    <ClCompile Include="DuckFactory.cpp" />
-    <ClCompile Include="DuckSimulator.cpp" />
-    <ClCompile Include="Flock.cpp" />
-    <ClCompile Include="Goose.cpp" />
-    <ClCompile Include="GooseAdapter2Duck.cpp" />
-    <ClCompile Include="IObservable.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MallardDuck.cpp" />
-    <ClCompile Include="DuckDecorator.cpp" />
-    <ClCompile Include="QuackObservable.cpp" />
-    <ClCompile Include="Quackolohist.cpp" />
-    <ClCompile Include="RedheadDuck.cpp" />
-    <ClCompile Include="RubberDuck.cpp" />
+    <ClInclude Include="BeatController.h" />
+    <ClInclude Include="BeatModel.h" />
+    <ClInclude Include="IBeatModel.h" />
+    <ClInclude Include="IBeatObserver.h" />
+    <ClInclude Include="IBPMObserver.h" />
+    <ClInclude Include="IController.h" />
+    <ClInclude Include="MVC.h" />
+    <ClInclude Include="MVCDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BeatController.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="BeatModel.cpp" />
+    <ClCompile Include="MVC.cpp" />
+    <ClCompile Include="MVCDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MVC.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MVC.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MVC.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MVC.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

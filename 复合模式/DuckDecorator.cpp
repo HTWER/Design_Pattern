@@ -36,5 +36,5 @@ void DuckDecorator::removeObserver(IObserver * o)
 
 void DuckDecorator::notifyObserver()
 {
-
+	duck->notifyObserver();
 }

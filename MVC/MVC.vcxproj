@@ -104,10 +104,14 @@
   <ItemGroup>
     <ClInclude Include="BeatController.h" />
     <ClInclude Include="BeatModel.h" />
+    <ClInclude Include="HeartAdapte2Beat.h" />
+    <ClInclude Include="HeartController.h" />
+    <ClInclude Include="HeartModel.h" />
     <ClInclude Include="IBeatModel.h" />
     <ClInclude Include="IBeatObserver.h" />
     <ClInclude Include="IBPMObserver.h" />
     <ClInclude Include="IController.h" />
+    <ClInclude Include="IHeartModel.h" />
     <ClInclude Include="MVC.h" />
     <ClInclude Include="MVCDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -119,6 +123,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="BeatModel.cpp" />
+    <ClCompile Include="HeartAdapte2Beat.cpp" />
+    <ClCompile Include="HeartController.cpp" />
+    <ClCompile Include="HeartModel.cpp" />
     <ClCompile Include="MVC.cpp" />
     <ClCompile Include="MVCDlg.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -10,9 +10,12 @@
 #pragma endregion
 
 #include "BeatModel.h"
+#include "HeartModel.h"
 #include "BeatController.h"
 #include "IBeatObserver.h"
 #include "IBPMObserver.h"
+#include "HeartAdapte2Beat.h"
+#include "HeartController.h"
 #include "string"
 
 #pragma region other
@@ -169,6 +172,10 @@ BOOL CMVCDlg::OnInitDialog()
 
 	model = new BeatModel();							//记得delete...
 	controller = new BeatController(model, this);		//记得delete...
+
+	//HeartModel* temp = new HeartModel();				//记得delete...
+	//model = new HeartAdapte2Beat(temp);					//记得delete...
+	//controller = new HeartController(temp, this);		//记得delete...
 
 	model->registerObserver((IBeatObserver*)this);
 	model->registerObserver((IBPMObserver*)this);

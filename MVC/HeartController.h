@@ -1,19 +1,19 @@
-#ifndef __BeatController_h__
-#define __BeatController_h__
+#ifndef __HEARTCONTROLLER_H__
+#define __HEARTCONTROLLER_H__
 
 #include "IController.h"
 
 class CMVCDlg;
-class IBeatModel;
+class IHeartModel;
 
-class BeatController:public IController
+class HeartController:public IController
 {
 private:
 	CMVCDlg* view;
-	IBeatModel* model;
-	BeatController(){};
+	IHeartModel* model;
+	HeartController(){};
 public:
-	BeatController(IBeatModel* model, CMVCDlg* view);
+	HeartController(IHeartModel* model, CMVCDlg* view);
 
 	void start() override;
 	void stop() override;

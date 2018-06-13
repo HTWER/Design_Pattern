@@ -19,6 +19,7 @@
 - 状态模式
 - 代理模式
 - 复合模式
+- MVC
 
 ### 参考资料 ###
 《HeadFirst设计模式》,Eric Freeman；ElElisabeth Freeman

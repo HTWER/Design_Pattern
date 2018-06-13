@@ -75,6 +75,18 @@
     <ClInclude Include="IBPMObserver.h">
       <Filter>头文件\view</Filter>
     </ClInclude>
+    <ClInclude Include="IHeartModel.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="HeartModel.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="HeartAdapte2Beat.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="HeartController.h">
+      <Filter>头文件\controller</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MVC.cpp">
@@ -90,6 +102,15 @@
       <Filter>源文件\model</Filter>
     </ClCompile>
     <ClCompile Include="BeatController.cpp">
+      <Filter>源文件\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="HeartModel.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="HeartAdapte2Beat.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="HeartController.cpp">
       <Filter>源文件\controller</Filter>
     </ClCompile>
   </ItemGroup>

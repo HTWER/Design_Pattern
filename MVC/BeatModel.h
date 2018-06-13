@@ -8,7 +8,7 @@ using namespace std;
 class BeatModel :public IBeatModel
 {
 private:
-	//放进观察者模式的实现中...
+	//放进观察者模式的可观察者类中，notifyBeatObservers函数需要带有一个字典参数，然后在组合到这里...
 	vector<IBeatObserver*> beatObservers;
 	vector<IBPMObserver*> bpmObservers;
 	/////////////////////////////////////

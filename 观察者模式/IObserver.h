@@ -16,7 +16,7 @@ public:
 	void toRegister(IObservable * subject);
 	void toCancel();
 
-	virtual void update(DataPakeger data) = 0;
+	virtual void update(DataPakeger data) = 0;			//这个接口的参数设计不合理，用字典好些...
 };
 
 #endif

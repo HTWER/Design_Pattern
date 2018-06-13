@@ -15,9 +15,7 @@ BeatController::BeatController(IBeatModel* model, CMVCDlg* view)
 
 void BeatController::start()
 {
-
 	model->on();
-	view->disableStartBtn();
 	view->enableStopBtn();
 }
 

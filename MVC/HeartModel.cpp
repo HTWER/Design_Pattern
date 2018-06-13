@@ -4,14 +4,39 @@
 #include "IBeatObserver.h"
 #include "IBPMObserver.h"
 
-HeartModel::HeartModel()
+#include <process.h>
+#include <windows.h>
+
+void HeartModel::ThreadFun(PVOID param)
 {
-	//开个心跳线程...
+	HeartModel *heartModel = (HeartModel *)param;
+	
+	int lastRate = -1;
+	while (true)
+	{
+		int change = rand() % 10;
+		if (rand() % 2 == 0)
+			change = -change;
+
+		int rate = 60000 / (heartModel->time + change);
+		if (rate < 120 && rate>50)
+		{
+			heartModel->time += change;
+			if (rate != lastRate)
+			{
+				lastRate = rate;
+				heartModel->notifyBPMObservers();
+			}
+			heartModel->notifyBeatObservers();
+		}
+
+		Sleep(heartModel->time);
+	}
 }
 
-void HeartModel::run()
+HeartModel::HeartModel()
 {
-	//...
+	_beginthread(ThreadFun, 0, this);
 }
 
 int HeartModel::getHeartRate()

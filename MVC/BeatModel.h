@@ -13,8 +13,8 @@ private:
 	vector<IBPMObserver*> bpmObservers;
 	/////////////////////////////////////
 	int bpm = 90;
-	//???
-	void beatEvent();
+	bool isOn = false;
+	static void ThreadFun(PVOID param);
 public:
 	void on() override;
 	void off() override;

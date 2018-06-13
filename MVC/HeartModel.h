@@ -15,10 +15,10 @@ private:
 	vector<IBPMObserver*> bpmObservers;
 	int time = 1000;		//心跳间隔
 	int bpm = 90;			//无用
+	static void ThreadFun(PVOID param);
 public:
 	HeartModel();
-	void run();		//心跳的线程函数？？？
-
+	
 	int getHeartRate() override;
 
 	void registerObserver(IBeatObserver* o) override;

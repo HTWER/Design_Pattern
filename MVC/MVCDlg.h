@@ -10,6 +10,7 @@
 
 #include "IBeatObserver.h"
 #include "IBPMObserver.h"
+#include "afxcmn.h"
 
 class IController;
 class IBeatModel;
@@ -51,7 +52,7 @@ private:
 	CButton m_startBtn;
 	CButton m_stopBtn;
 	int m_textField_BPM;
-	CString m_bpmLabel;
+	CProgressCtrl m_beatBar;
 public:
 	void enableStartBtn();
 	void disableStartBtn();

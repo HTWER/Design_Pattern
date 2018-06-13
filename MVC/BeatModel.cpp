@@ -4,27 +4,34 @@
 #include "IBeatObserver.h"
 #include "IBPMObserver.h"
 
-void BeatModel::beatEvent()
+#include <process.h>
+#include <windows.h>
+
+void BeatModel::ThreadFun(PVOID param)
 {
-	notifyBeatObservers();
+	BeatModel *beatModel = (BeatModel *)param;
+	while (beatModel->isOn){
+		beatModel->notifyBeatObservers();
+		Sleep(60000 / beatModel->bpm);
+	}
 }
 
 void BeatModel::on()
 {
 	setBPM(90);
-	//启动一个节拍定时器...
+	isOn = true;
+	_beginthread(ThreadFun, 0, this);
 }
 
 void BeatModel::off()
 {
 	setBPM(0);
-	//停止一个节拍定时器...
+	isOn = false;
 }
 
 void BeatModel::setBPM(int bpm)
 {
 	this->bpm = bpm;
-	//修改节拍定时器的节奏...
 	notifyBPMObservers();
 }
 

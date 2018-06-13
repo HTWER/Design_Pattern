@@ -60,7 +60,6 @@ END_MESSAGE_MAP()
 CMVCDlg::CMVCDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(CMVCDlg::IDD, pParent)
 	, m_textField_BPM(0)
-	, m_bpmLabel(_T(""))
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -72,7 +71,7 @@ void CMVCDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Text(pDX, IDC_TEXTFIELD_BPM, m_textField_BPM);
 	DDV_MinMaxInt(pDX, m_textField_BPM, 0, 9999);
 	DDX_Control(pDX, IDC_BTN_STOP, m_stopBtn);
-	DDX_Text(pDX, IDC_LABEL_BPM, m_bpmLabel);
+	DDX_Control(pDX, IDC_PROGRESS1, m_beatBar);
 }
 
 BEGIN_MESSAGE_MAP(CMVCDlg, CDialogEx)
@@ -170,12 +169,12 @@ BOOL CMVCDlg::OnInitDialog()
 	// TODO:  在此添加额外的初始化代码
 #pragma endregion
 
-	model = new BeatModel();							//记得delete...
-	controller = new BeatController(model, this);		//记得delete...
+	//model = new BeatModel();							//记得delete...
+	//controller = new BeatController(model, this);		//记得delete...
 
-	//HeartModel* temp = new HeartModel();				//记得delete...
-	//model = new HeartAdapte2Beat(temp);					//记得delete...
-	//controller = new HeartController(temp, this);		//记得delete...
+	HeartModel* temp = new HeartModel();				//记得delete...
+	model = new HeartAdapte2Beat(temp);					//记得delete...
+	controller = new HeartController(temp, this);		//记得delete...
 
 	model->registerObserver((IBeatObserver*)this);
 	model->registerObserver((IBPMObserver*)this);
@@ -240,16 +239,22 @@ void CMVCDlg::disableStopBtn()
 
 void CMVCDlg::updateBeat()
 {
-	//脉动...
+	m_beatBar.SetPos(0);
+	m_beatBar.SetRange(0, 100);
+	m_beatBar.SetStep(0);
+	m_beatBar.SetPos(100);
 }
 
 void CMVCDlg::updateBPM()
 {
 	int bpm = model->getBPM();
 	if (bpm == 0)
-		m_bpmLabel = "offline";
+		GetDlgItem(IDC_LABEL_BPM)->SetWindowTextW(L"offline");		//J...
 	else
-		m_bpmLabel = ("Current BPM: " + to_string(bpm)).c_str();
-
-	UpdateData(FALSE);
+	{
+		CString str1("Current BPM: ");
+		CString str2(to_string(bpm).c_str());
+		str1.Append(str2);
+		GetDlgItem(IDC_LABEL_BPM)->SetWindowTextW(str1);		//J...
+	}
 }

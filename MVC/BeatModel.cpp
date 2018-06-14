@@ -39,14 +39,14 @@ int BeatModel::getBPM()
 	return bpm;
 }
 
-void BeatModel::registerBeatObserver(Observer* o)
+void BeatModel::registerBeatObserver(Observer<CMVCDlg>* o)
 {
 	beatObservers.push_back(o);
 }
 
-void BeatModel::removeBeatObserver(Observer* o)
+void BeatModel::removeBeatObserver(Observer<CMVCDlg>* o)
 {
-	vector<Observer*>::iterator iter;
+	vector<Observer<CMVCDlg>*>::iterator iter;
 	for (iter = beatObservers.begin(); iter != beatObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -57,18 +57,18 @@ void BeatModel::removeBeatObserver(Observer* o)
 
 void BeatModel::notifyBeatObservers()
 {
-	for each (Observer* var in beatObservers)
+	for each (Observer<CMVCDlg>* var in beatObservers)
 		var->update(this);
 }
 
-void BeatModel::registerBPMObserver(Observer* o)
+void BeatModel::registerBPMObserver(Observer<CMVCDlg>* o)
 {
 	bpmObservers.push_back(o);
 }
 
-void BeatModel::removeBPMObserver(Observer* o)
+void BeatModel::removeBPMObserver(Observer<CMVCDlg>* o)
 {
-	vector<Observer*>::iterator iter;
+	vector<Observer<CMVCDlg>*>::iterator iter;
 	for (iter = bpmObservers.begin(); iter != bpmObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -79,6 +79,6 @@ void BeatModel::removeBPMObserver(Observer* o)
 
 void BeatModel::notifyBPMObservers()
 {
-	for each (Observer* var in bpmObservers)
+	for each (Observer<CMVCDlg>* var in bpmObservers)
 		var->update(this);
 }

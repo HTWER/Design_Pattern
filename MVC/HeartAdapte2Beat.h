@@ -18,11 +18,11 @@ public:
 	void setBPM(int bpm) override;
 	int getBPM() override;
 
-	void registerBeatObserver(Observer* o) override;
-	void removeBeatObserver(Observer* o) override;
+	void registerBeatObserver(Observer<CMVCDlg>* o) override;
+	void removeBeatObserver(Observer<CMVCDlg>* o) override;
 
-	void registerBPMObserver(Observer* o) override;
-	void removeBPMObserver(Observer* o) override;
+	void registerBPMObserver(Observer<CMVCDlg>* o) override;
+	void removeBPMObserver(Observer<CMVCDlg>* o) override;
 };
 
 #endif

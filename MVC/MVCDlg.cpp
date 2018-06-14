@@ -168,8 +168,8 @@ BOOL CMVCDlg::OnInitDialog()
 	// TODO:  在此添加额外的初始化代码
 #pragma endregion
 
-	beatObserver = new Observer(this, &CMVCDlg::updateBeat);
-	bpmObserver = new Observer(this, &CMVCDlg::updateBPM);
+	beatObserver = new Observer<CMVCDlg>(this, &CMVCDlg::updateBeat);
+	bpmObserver = new Observer<CMVCDlg>(this, &CMVCDlg::updateBPM);
 
 	model = new BeatModel();							//记得delete...
 	controller = new BeatController(model, this);		//记得delete...

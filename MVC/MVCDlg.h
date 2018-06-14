@@ -41,8 +41,8 @@ protected:
 private:
 	IController* controller;
 	IBeatModel* model;			//view其实不必持有model，因为可以通过观察者模式获得model；这么做有缺点？？？
-	Observer* beatObserver;
-	Observer* bpmObserver;
+	Observer<CMVCDlg>* beatObserver;
+	Observer<CMVCDlg>* bpmObserver;
 public:
 	afx_msg void OnBnClickedBtnStart();
 	afx_msg void OnBnClickedBtnStop();

@@ -43,14 +43,14 @@ int HeartModel::getHeartRate()
 	return 60000 / time;
 }
 
-void HeartModel::registerBeatObserver(Observer* o)
+void HeartModel::registerBeatObserver(Observer<CMVCDlg>* o)
 {
 	beatObservers.push_back(o);
 }
 
-void HeartModel::removeBeatObserver(Observer* o)
+void HeartModel::removeBeatObserver(Observer<CMVCDlg>* o)
 {
-	vector<Observer*>::iterator iter;
+	vector<Observer<CMVCDlg>*>::iterator iter;
 	for (iter = beatObservers.begin(); iter != beatObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -61,18 +61,18 @@ void HeartModel::removeBeatObserver(Observer* o)
 
 void HeartModel::notifyBeatObservers()
 {
-	for each (Observer* var in beatObservers)
+	for each (Observer<CMVCDlg>* var in beatObservers)
 		var->update(this);
 }
 
-void HeartModel::registerBPMObserver(Observer* o)
+void HeartModel::registerBPMObserver(Observer<CMVCDlg>* o)
 {
 	bpmObservers.push_back(o);
 }
 
-void HeartModel::removeBPMObserver(Observer* o)
+void HeartModel::removeBPMObserver(Observer<CMVCDlg>* o)
 {
-	vector<Observer*>::iterator iter;
+	vector<Observer<CMVCDlg>*>::iterator iter;
 	for (iter = bpmObservers.begin(); iter != bpmObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -83,6 +83,6 @@ void HeartModel::removeBPMObserver(Observer* o)
 
 void HeartModel::notifyBPMObservers()
 {
-	for each (Observer* var in bpmObservers)
+	for each (Observer<CMVCDlg>* var in bpmObservers)
 		var->update(this);
 }

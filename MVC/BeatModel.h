@@ -9,8 +9,8 @@ class BeatModel :public IBeatModel
 {
 private:
 	//放进观察者模式的可观察者类中，notifyBeatObservers函数需要带有一个字典参数，然后在组合到这里...
-	vector<Observer*> beatObservers;
-	vector<Observer*> bpmObservers;
+	vector<Observer<CMVCDlg>*> beatObservers;
+	vector<Observer<CMVCDlg>*> bpmObservers;
 	/////////////////////////////////////
 	int bpm = 90;
 	bool isOn = false;
@@ -22,12 +22,12 @@ public:
 	void setBPM(int bpm) override;
 	int getBPM() override;
 
-	void registerBeatObserver(Observer* o) override;
-	void removeBeatObserver(Observer* o) override;
+	void registerBeatObserver(Observer<CMVCDlg>* o) override;
+	void removeBeatObserver(Observer<CMVCDlg>* o) override;
 	void notifyBeatObservers();
 
-	void registerBPMObserver(Observer* o) override;
-	void removeBPMObserver(Observer* o) override;
+	void registerBPMObserver(Observer<CMVCDlg>* o) override;
+	void removeBPMObserver(Observer<CMVCDlg>* o) override;
 	void notifyBPMObservers();
 };
 

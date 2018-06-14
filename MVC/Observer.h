@@ -1,24 +1,25 @@
 #ifndef __OBSERVER_H__
 #define __OBSERVER_H__
 
-class CMVCDlg;
+#include "MVCDlg.h"		//±∆≤ªµ√“—
 
+template <typename T>
 class Observer
 {
-	typedef void(CMVCDlg::*p_func)(void*);
+	typedef void(T::*p_func)(void*);
 public:
 	virtual ~Observer(){};
 
+	T* mulitiObj;
 	p_func updateFun;
-	CMVCDlg* mulitiObj;
 
-	Observer(CMVCDlg* mulitiObj, p_func updateFun)
+	Observer(T* mulitiObj, p_func updateFun)
 	{
-		this->mulitiObj = mulitiObj;
-		this->updateFun = updateFun;
+ 		this->mulitiObj = mulitiObj;
+ 		this->updateFun = updateFun;
 	}
 
-	virtual void update(void* observableObj)
+	void update(void* observableObj)
 	{
 		(mulitiObj->*updateFun)(observableObj);
 	}

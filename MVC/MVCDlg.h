@@ -8,14 +8,13 @@
 #include "Resource.h"
 #pragma endregion
 
-#include "IBeatObserver.h"
-#include "IBPMObserver.h"
+#include "Observer.h"
 #include "afxcmn.h"
 
 class IController;
 class IBeatModel;
 
-class CMVCDlg : public CDialogEx, public IBeatObserver, public IBPMObserver
+class CMVCDlg : public CDialogEx
 {
 public:
 #pragma region other
@@ -42,6 +41,8 @@ protected:
 private:
 	IController* controller;
 	IBeatModel* model;			//view其实不必持有model，因为可以通过观察者模式获得model；这么做有缺点？？？
+	Observer* beatObserver;
+	Observer* bpmObserver;
 public:
 	afx_msg void OnBnClickedBtnStart();
 	afx_msg void OnBnClickedBtnStop();
@@ -58,6 +59,6 @@ public:
 	void disableStartBtn();
 	void enableStopBtn();
 	void disableStopBtn();
-	void updateBeat() override;
-	void updateBPM() override;
+	void updateBeat(void* observableObj);
+	void updateBPM(void* observableObj);
 };

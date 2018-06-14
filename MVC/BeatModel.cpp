@@ -1,8 +1,7 @@
 #include "stdafx.h"
 
 #include "BeatModel.h"
-#include "IBeatObserver.h"
-#include "IBPMObserver.h"
+#include "Observer.h"
 
 #include <process.h>
 #include <windows.h>
@@ -40,14 +39,14 @@ int BeatModel::getBPM()
 	return bpm;
 }
 
-void BeatModel::registerObserver(IBeatObserver* o)
+void BeatModel::registerBeatObserver(Observer* o)
 {
 	beatObservers.push_back(o);
 }
 
-void BeatModel::removeObserver(IBeatObserver* o)
+void BeatModel::removeBeatObserver(Observer* o)
 {
-	vector<IBeatObserver*>::iterator iter;
+	vector<Observer*>::iterator iter;
 	for (iter = beatObservers.begin(); iter != beatObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -58,18 +57,18 @@ void BeatModel::removeObserver(IBeatObserver* o)
 
 void BeatModel::notifyBeatObservers()
 {
-	for each (IBeatObserver* var in beatObservers)
-		var->updateBeat();
+	for each (Observer* var in beatObservers)
+		var->update(this);
 }
 
-void BeatModel::registerObserver(IBPMObserver* o)
+void BeatModel::registerBPMObserver(Observer* o)
 {
 	bpmObservers.push_back(o);
 }
 
-void BeatModel::removeObserver(IBPMObserver* o)
+void BeatModel::removeBPMObserver(Observer* o)
 {
-	vector<IBPMObserver*>::iterator iter;
+	vector<Observer*>::iterator iter;
 	for (iter = bpmObservers.begin(); iter != bpmObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -80,6 +79,6 @@ void BeatModel::removeObserver(IBPMObserver* o)
 
 void BeatModel::notifyBPMObservers()
 {
-	for each (IBPMObserver* var in bpmObservers)
-		var->updateBPM();
+	for each (Observer* var in bpmObservers)
+		var->update(this);
 }

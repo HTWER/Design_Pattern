@@ -5,14 +5,13 @@
 #include <vector>
 using namespace std;
 
-class IBeatObserver;
-class IBPMObserver;
+class Observer;
 
 class HeartModel :public IHeartModel
 {
 private:
-	vector<IBeatObserver*> beatObservers;
-	vector<IBPMObserver*> bpmObservers;
+	vector<Observer*> beatObservers;
+	vector<Observer*> bpmObservers;
 	int time = 1000;		//心跳间隔
 	int bpm = 90;			//无用
 	static void ThreadFun(PVOID param);
@@ -21,12 +20,12 @@ public:
 	
 	int getHeartRate() override;
 
-	void registerObserver(IBeatObserver* o) override;
-	void removeObserver(IBeatObserver* o) override;
+	void registerBeatObserver(Observer* o) override;
+	void removeBeatObserver(Observer* o) override;
 	void notifyBeatObservers();
 
-	void registerObserver(IBPMObserver* o) override;
-	void removeObserver(IBPMObserver* o) override;
+	void registerBPMObserver(Observer* o) override;
+	void removeBPMObserver(Observer* o) override;
 	void notifyBPMObservers();
 };
 

@@ -28,22 +28,22 @@ int HeartAdapte2Beat::getBPM()
 	return heart->getHeartRate();
 }
 
-void HeartAdapte2Beat::registerObserver(IBeatObserver* o)
+void HeartAdapte2Beat::registerBeatObserver(Observer* o)
 {
-	heart->registerObserver(o);
+	heart->registerBeatObserver(o);
 }
 
-void HeartAdapte2Beat::removeObserver(IBeatObserver* o)
+void HeartAdapte2Beat::removeBeatObserver(Observer* o)
 {
-	heart->removeObserver(o);
+	heart->removeBeatObserver(o);
 }
 
-void HeartAdapte2Beat::registerObserver(IBPMObserver* o)
+void HeartAdapte2Beat::registerBPMObserver(Observer* o)
 {
-	heart->registerObserver(o);
+	heart->registerBPMObserver(o);
 }
 
-void HeartAdapte2Beat::removeObserver(IBPMObserver* o)
+void HeartAdapte2Beat::removeBPMObserver(Observer* o)
 {
-	heart->removeObserver(o);
+	heart->removeBPMObserver(o);
 }

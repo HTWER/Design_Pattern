@@ -1,8 +1,7 @@
 #include "stdafx.h"
 
 #include "HeartModel.h"
-#include "IBeatObserver.h"
-#include "IBPMObserver.h"
+#include "Observer.h"
 
 #include <process.h>
 #include <windows.h>
@@ -44,14 +43,14 @@ int HeartModel::getHeartRate()
 	return 60000 / time;
 }
 
-void HeartModel::registerObserver(IBeatObserver* o)
+void HeartModel::registerBeatObserver(Observer* o)
 {
 	beatObservers.push_back(o);
 }
 
-void HeartModel::removeObserver(IBeatObserver* o)
+void HeartModel::removeBeatObserver(Observer* o)
 {
-	vector<IBeatObserver*>::iterator iter;
+	vector<Observer*>::iterator iter;
 	for (iter = beatObservers.begin(); iter != beatObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -62,18 +61,18 @@ void HeartModel::removeObserver(IBeatObserver* o)
 
 void HeartModel::notifyBeatObservers()
 {
-	for each (IBeatObserver* var in beatObservers)
-		var->updateBeat();
+	for each (Observer* var in beatObservers)
+		var->update(this);
 }
 
-void HeartModel::registerObserver(IBPMObserver* o)
+void HeartModel::registerBPMObserver(Observer* o)
 {
 	bpmObservers.push_back(o);
 }
 
-void HeartModel::removeObserver(IBPMObserver* o)
+void HeartModel::removeBPMObserver(Observer* o)
 {
-	vector<IBPMObserver*>::iterator iter;
+	vector<Observer*>::iterator iter;
 	for (iter = bpmObservers.begin(); iter != bpmObservers.end(); iter++)
 	{
 		if (*iter == 0)
@@ -84,6 +83,6 @@ void HeartModel::removeObserver(IBPMObserver* o)
 
 void HeartModel::notifyBPMObservers()
 {
-	for each (IBPMObserver* var in bpmObservers)
-		var->updateBPM();
+	for each (Observer* var in bpmObservers)
+		var->update(this);
 }

@@ -108,10 +108,9 @@
     <ClInclude Include="HeartController.h" />
     <ClInclude Include="HeartModel.h" />
     <ClInclude Include="IBeatModel.h" />
-    <ClInclude Include="IBeatObserver.h" />
-    <ClInclude Include="IBPMObserver.h" />
     <ClInclude Include="IController.h" />
     <ClInclude Include="IHeartModel.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="MVC.h" />
     <ClInclude Include="MVCDlg.h" />
     <ClInclude Include="Resource.h" />

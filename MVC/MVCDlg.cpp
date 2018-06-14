@@ -12,8 +12,7 @@
 #include "BeatModel.h"
 #include "HeartModel.h"
 #include "BeatController.h"
-#include "IBeatObserver.h"
-#include "IBPMObserver.h"
+#include "Observer.h"
 #include "HeartAdapte2Beat.h"
 #include "HeartController.h"
 #include "string"
@@ -169,15 +168,18 @@ BOOL CMVCDlg::OnInitDialog()
 	// TODO:  在此添加额外的初始化代码
 #pragma endregion
 
-	//model = new BeatModel();							//记得delete...
-	//controller = new BeatController(model, this);		//记得delete...
+	beatObserver = new Observer(this, &CMVCDlg::updateBeat);
+	bpmObserver = new Observer(this, &CMVCDlg::updateBPM);
 
-	HeartModel* temp = new HeartModel();				//记得delete...
-	model = new HeartAdapte2Beat(temp);					//记得delete...
-	controller = new HeartController(temp, this);		//记得delete...
+	model = new BeatModel();							//记得delete...
+	controller = new BeatController(model, this);		//记得delete...
 
-	model->registerObserver((IBeatObserver*)this);
-	model->registerObserver((IBPMObserver*)this);
+	//HeartModel* temp = new HeartModel();				//记得delete...
+	//model = new HeartAdapte2Beat(temp);					//记得delete...
+	//controller = new HeartController(temp, this);		//记得delete...
+
+	model->registerBeatObserver(beatObserver);
+	model->registerBPMObserver(bpmObserver);
 
 #pragma region other
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -237,7 +239,7 @@ void CMVCDlg::disableStopBtn()
 	m_stopBtn.EnableWindow(false);
 }
 
-void CMVCDlg::updateBeat()
+void CMVCDlg::updateBeat(void* observableObj)
 {
 	m_beatBar.SetPos(0);
 	m_beatBar.SetRange(0, 100);
@@ -245,7 +247,7 @@ void CMVCDlg::updateBeat()
 	m_beatBar.SetPos(100);
 }
 
-void CMVCDlg::updateBPM()
+void CMVCDlg::updateBPM(void* observableObj)
 {
 	int bpm = model->getBPM();
 	if (bpm == 0)

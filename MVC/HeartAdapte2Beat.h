@@ -18,11 +18,11 @@ public:
 	void setBPM(int bpm) override;
 	int getBPM() override;
 
-	void registerObserver(IBeatObserver* o) override;
-	void removeObserver(IBeatObserver* o) override;
+	void registerBeatObserver(Observer* o) override;
+	void removeBeatObserver(Observer* o) override;
 
-	void registerObserver(IBPMObserver* o) override;
-	void removeObserver(IBPMObserver* o) override;
+	void registerBPMObserver(Observer* o) override;
+	void removeBPMObserver(Observer* o) override;
 };
 
 #endif

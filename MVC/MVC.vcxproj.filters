@@ -69,12 +69,6 @@
     <ClInclude Include="BeatController.h">
       <Filter>头文件\controller</Filter>
     </ClInclude>
-    <ClInclude Include="IBeatObserver.h">
-      <Filter>头文件\view</Filter>
-    </ClInclude>
-    <ClInclude Include="IBPMObserver.h">
-      <Filter>头文件\view</Filter>
-    </ClInclude>
     <ClInclude Include="IHeartModel.h">
       <Filter>头文件\model</Filter>
     </ClInclude>
@@ -86,6 +80,9 @@
     </ClInclude>
     <ClInclude Include="HeartController.h">
       <Filter>头文件\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>头文件\view</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

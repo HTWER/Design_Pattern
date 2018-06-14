@@ -1,8 +1,6 @@
 #ifndef __OBSERVABLE_H__
 #define __OBSERVABLE_H__
 
-#include "MVCDlg.h"
-
 #include <vector>
 using namespace std;
 

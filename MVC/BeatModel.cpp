@@ -3,9 +3,16 @@
 #include "BeatModel.h"
 #include "Observer.h"
 #include "MVCDlg.h"
+#include "Observable.h"
 
 #include <process.h>
 #include <windows.h>
+
+BeatModel::BeatModel()
+{
+	beatObservable = new Observable<CMVCDlg>;
+	bpmObservable = new Observable<CMVCDlg>;
+}
 
 void BeatModel::ThreadFun(PVOID param)
 {
@@ -42,30 +49,30 @@ int BeatModel::getBPM()
 
 void BeatModel::registerBeatObserver(Observer<CMVCDlg>* o)
 {
-	beatObservable.registerObserver(o);
+	beatObservable->registerObserver(o);
 }
 
 void BeatModel::removeBeatObserver(Observer<CMVCDlg>* o)
 {
-	beatObservable.removeObserver(o);
+	beatObservable->removeObserver(o);
 }
 
 void BeatModel::notifyBeatObservers()
 {
-	beatObservable.notifyObservers(this);
+	beatObservable->notifyObservers(this);
 }
 
 void BeatModel::registerBPMObserver(Observer<CMVCDlg>* o)
 {
-	bpmObservable.registerObserver(o);
+	bpmObservable->registerObserver(o);
 }
 
 void BeatModel::removeBPMObserver(Observer<CMVCDlg>* o)
 {
-	bpmObservable.removeObserver(o);
+	bpmObservable->removeObserver(o);
 }
 
 void BeatModel::notifyBPMObservers()
 {
-	bpmObservable.notifyObservers(this);
+	bpmObservable->notifyObservers(this);
 }

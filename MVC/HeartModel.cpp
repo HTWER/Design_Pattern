@@ -2,6 +2,8 @@
 
 #include "HeartModel.h"
 #include "Observer.h"
+#include "Observable.h"
+#include "MVCDlg.h"
 
 #include <process.h>
 #include <windows.h>
@@ -35,6 +37,8 @@ void HeartModel::ThreadFun(PVOID param)
 
 HeartModel::HeartModel()
 {
+	beatObservable = new Observable<CMVCDlg>();
+	bpmObservable = new Observable<CMVCDlg>();
 	_beginthread(ThreadFun, 0, this);
 }
 
@@ -45,30 +49,30 @@ int HeartModel::getHeartRate()
 
 void HeartModel::registerBeatObserver(Observer<CMVCDlg>* o)
 {
-	beatObservable.registerObserver(o);
+	beatObservable->registerObserver(o);
 }
 
 void HeartModel::removeBeatObserver(Observer<CMVCDlg>* o)
 {
-	beatObservable.removeObserver(o);
+	beatObservable->removeObserver(o);
 }
 
 void HeartModel::notifyBeatObservers()
 {
-	beatObservable.notifyObservers(this);
+	beatObservable->notifyObservers(this);
 }
 
 void HeartModel::registerBPMObserver(Observer<CMVCDlg>* o)
 {
-	bpmObservable.registerObserver(o);
+	bpmObservable->registerObserver(o);
 }
 
 void HeartModel::removeBPMObserver(Observer<CMVCDlg>* o)
 {
-	bpmObservable.removeObserver(o);
+	bpmObservable->removeObserver(o);
 }
 
 void HeartModel::notifyBPMObservers()
 {
-	bpmObservable.notifyObservers(this);
+	bpmObservable->notifyObservers(this);
 }

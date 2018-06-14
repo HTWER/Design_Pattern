@@ -2,7 +2,9 @@
 #define __BEATMODEL_H__
 
 #include "IBeatModel.h"
-#include "Observable.h"
+
+template <typename T>
+class Observable;
 
 class CMVCDlg;
 
@@ -12,9 +14,11 @@ private:
 	int bpm = 90;
 	bool isOn = false;
 	static void ThreadFun(PVOID param);
-	Observable<CMVCDlg> beatObservable;
-	Observable<CMVCDlg> bpmObservable;
+	Observable<CMVCDlg>* beatObservable;
+	Observable<CMVCDlg>* bpmObservable;
 public:
+	BeatModel();
+
 	void on() override;
 	void off() override;
 

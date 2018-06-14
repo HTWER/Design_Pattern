@@ -8,11 +8,13 @@
 #include "Resource.h"
 #pragma endregion
 
-#include "Observer.h"		//改...
 #include "afxcmn.h"
 
 class IController;
 class IBeatModel;
+
+template <typename T>
+class Observer;
 
 class CMVCDlg : public CDialogEx
 {
@@ -40,7 +42,7 @@ protected:
 	virtual BOOL OnInitDialog();
 private:
 	IController* controller;
-	IBeatModel* model;			//view其实不必持有model，因为可以通过观察者模式获得model；这么做有缺点？？？
+	IBeatModel* model;			//view其实不必持有model，因为可以通过观察者模式获得model...
 	Observer<CMVCDlg>* beatObserver;
 	Observer<CMVCDlg>* bpmObserver;
 public:

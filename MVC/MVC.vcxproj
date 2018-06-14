@@ -110,6 +110,7 @@
     <ClInclude Include="IBeatModel.h" />
     <ClInclude Include="IController.h" />
     <ClInclude Include="IHeartModel.h" />
+    <ClInclude Include="Observable.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="MVC.h" />
     <ClInclude Include="MVCDlg.h" />

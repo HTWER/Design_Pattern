@@ -16,7 +16,6 @@ public:
 	virtual void setBPM(int bpm) = 0;
 	virtual int getBPM() = 0;
 
-	//可以独立成一个接口，再包含量该接口实例...
 	virtual void registerBeatObserver(Observer<CMVCDlg>* o) = 0;
 	virtual void removeBeatObserver(Observer<CMVCDlg>* o) = 0;
 	virtual void registerBPMObserver(Observer<CMVCDlg>* o) = 0;

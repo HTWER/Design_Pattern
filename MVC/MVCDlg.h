@@ -8,7 +8,7 @@
 #include "Resource.h"
 #pragma endregion
 
-#include "Observer.h"
+#include "Observer.h"		//¸Ä...
 #include "afxcmn.h"
 
 class IController;

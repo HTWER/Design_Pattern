@@ -2,19 +2,18 @@
 #define __BEATMODEL_H__
 
 #include "IBeatModel.h"
-#include <vector>
-using namespace std;
+#include "Observable.h"
+
+class CMVCDlg;
 
 class BeatModel :public IBeatModel
 {
 private:
-	//放进观察者模式的可观察者类中，notifyBeatObservers函数需要带有一个字典参数，然后在组合到这里...
-	vector<Observer<CMVCDlg>*> beatObservers;
-	vector<Observer<CMVCDlg>*> bpmObservers;
-	/////////////////////////////////////
 	int bpm = 90;
 	bool isOn = false;
 	static void ThreadFun(PVOID param);
+	Observable<CMVCDlg> beatObservable;
+	Observable<CMVCDlg> bpmObservable;
 public:
 	void on() override;
 	void off() override;
@@ -24,7 +23,7 @@ public:
 
 	void registerBeatObserver(Observer<CMVCDlg>* o) override;
 	void removeBeatObserver(Observer<CMVCDlg>* o) override;
-	void notifyBeatObservers();
+	void notifyBeatObservers();		//notify函数之所以不用是虚函数，是因为它不是适配目标
 
 	void registerBPMObserver(Observer<CMVCDlg>* o) override;
 	void removeBPMObserver(Observer<CMVCDlg>* o) override;

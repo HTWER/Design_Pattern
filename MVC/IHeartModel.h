@@ -6,6 +6,7 @@ class Observer;
 
 class CMVCDlg;
 
+//这个类是没有必要的
 class IHeartModel
 {
 public:

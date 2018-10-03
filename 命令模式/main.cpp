@@ -57,8 +57,8 @@ int main()
 	Command* commands1[] = { lightOnCommand, stereoOnWithCDCommand };
 	MacroCommand * macroCommand1 = new MacroCommand(commands1, 2);
 
-	Command* command2[] = { stereoOffCommand, lightOffCommand };
-	MacroCommand * macroCommand2 = new MacroCommand(command2, 2);
+	Command* commands2[] = { stereoOffCommand, lightOffCommand };
+	MacroCommand * macroCommand2 = new MacroCommand(commands2, 2);
 
 	remoteControl->setCommand(2, macroCommand1, macroCommand2);
 

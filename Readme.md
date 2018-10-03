@@ -23,3 +23,4 @@
 
 ### 参考资料 ###
 《HeadFirst设计模式》,Eric Freeman；ElElisabeth Freeman
+《Game Programming Patterns》

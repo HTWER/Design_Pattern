@@ -14,7 +14,7 @@ private:
 	map<int, Command*> offCommands;
 
 	//用栈来记录历史操作
-	vector<Command*> undoCommands;			//尝试实现撤销多个命令...
+	vector<Command*> undoCommands;
 public:
 
 	~RemoteControl()
@@ -33,21 +33,21 @@ public:
 	}
 
 	//按下启动按钮
-	void onButtonWasPushed(int slot)
+	void on(int slot)
 	{
 		onCommands[slot]->execute();
 		undoCommands.push_back(onCommands[slot]);
 	}
 
 	//按下关闭按钮
-	void offButtonWasPushed(int slot)
+	void off(int slot)
 	{
 		offCommands[slot]->execute();
 		undoCommands.push_back(offCommands[slot]);
 	}
 
 	//按下撤销按钮
-	void undoButtonWasPushed()
+	void undo()
 	{
 		if (undoCommands.empty() != true)
 		{
@@ -57,6 +57,8 @@ public:
 		else
 			cout << "无法继续撤销" << endl;
 	}
+
+	//void redo()
 };
 
 

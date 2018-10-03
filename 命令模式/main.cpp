@@ -23,17 +23,17 @@ int main()
 	remoteControl->setCommand(0, lightOnCommand,lightOffCommand);
 	remoteControl->setCommand(1, stereoOnWithCDCommand, stereoOffCommand);
 
-	remoteControl->onButtonWasPushed(0);
-	remoteControl->undoButtonWasPushed();
+	remoteControl->on(0);
+	remoteControl->undo();
 
-	remoteControl->onButtonWasPushed(1);
-	remoteControl->undoButtonWasPushed();
+	remoteControl->on(1);
+	remoteControl->undo();
 
-	remoteControl->offButtonWasPushed(0);
-	remoteControl->undoButtonWasPushed();
+	remoteControl->off(0);
+	remoteControl->undo();
 
-	remoteControl->offButtonWasPushed(1);
-	remoteControl->undoButtonWasPushed();
+	remoteControl->off(1);
+	remoteControl->undo();
 
 	//宏命令
 	cout << endl << "宏命令：" << endl;
@@ -45,23 +45,23 @@ int main()
 
 	remoteControl->setCommand(2, macroCommand1, macroCommand2);
 
-	remoteControl->onButtonWasPushed(2);
-	remoteControl->undoButtonWasPushed();
+	remoteControl->on(2);
+	remoteControl->undo();
 
-	remoteControl->offButtonWasPushed(2);
-	remoteControl->undoButtonWasPushed();
+	remoteControl->off(2);
+	remoteControl->undo();
 
 	//多重撤销功能
 	cout << endl << "多重撤销功能：" << endl;
-	remoteControl->onButtonWasPushed(0);
-	remoteControl->offButtonWasPushed(0);
-	remoteControl->offButtonWasPushed(0);
-	remoteControl->onButtonWasPushed(0);
+	remoteControl->on(0);
+	remoteControl->off(0);
+	remoteControl->off(0);
+	remoteControl->on(0);
 
-	remoteControl->undoButtonWasPushed();
-	remoteControl->undoButtonWasPushed();
-	remoteControl->undoButtonWasPushed();
-	remoteControl->undoButtonWasPushed();
+	remoteControl->undo();
+	remoteControl->undo();
+	remoteControl->undo();
+	remoteControl->undo();
 
 	system("pause");
 	return 0;

@@ -76,7 +76,6 @@
     <ClInclude Include="MacroCommand.h" />
     <ClInclude Include="NoCommand.h" />
     <ClInclude Include="RemoteControl.h" />
-    <ClInclude Include="SimpleRemoteControl.h" />
     <ClInclude Include="Stereo.h" />
     <ClInclude Include="StereoOffCommand.h" />
     <ClInclude Include="StereoOnWithCDCommand.h" />

@@ -48,9 +48,6 @@
     <ClInclude Include="MacroCommand.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SimpleRemoteControl.h">
-      <Filter>头文件\kernel</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

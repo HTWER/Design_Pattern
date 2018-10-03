@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include "SimpleRemoteControl.h"
 #include "RemoteControl.h"
 #include "Light.h"
 #include "LightOnCommand.h"
@@ -12,22 +11,6 @@ using namespace std;
 
 int main()
 {
-	//////////////////////////使用简单的遥控器//////////////////////////
-// 	//创建命令
-// 	Light * light = new Light();
-// 	LightOnCommand * lightOnCommand = new LightOnCommand(light);
-// 	//插上命令
-// 	SimpleRemoteControl simpleRemoteControl;
-// 	simpleRemoteControl.setCommand(lightOnCommand);
-// 	//启动命令
-// 	simpleRemoteControl.buttonWasPressed();
-// 
-// 	delete light;
-// 	delete lightOnCommand;
-	//////////////////////////使用简单的遥控器//////////////////////////
-
-
-	//////////////////////////使用复杂的遥控器//////////////////////////
 	Light * light = new Light();
 	LightOnCommand * lightOnCommand = new LightOnCommand(light);
 	LightOffCommand * lightOffCommand = new LightOffCommand(light);
@@ -79,9 +62,6 @@ int main()
 	remoteControl->undoButtonWasPushed();
 	remoteControl->undoButtonWasPushed();
 	remoteControl->undoButtonWasPushed();
-
-
-	//////////////////////////使用复杂的遥控器//////////////////////////
 
 	system("pause");
 	return 0;

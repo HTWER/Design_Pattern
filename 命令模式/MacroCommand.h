@@ -6,8 +6,8 @@
 class MacroCommand:public Command
 {
 private:
-	Command* *commands;		//一个命令数组
-	int count;				//记录命令数组中命令的个数
+	Command* *commands;
+	int count;				//commands的长度
 
 	MacroCommand(){}
 

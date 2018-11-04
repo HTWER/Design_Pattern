@@ -1,5 +1,4 @@
 #include <iostream>
-#include "DinerMenu.h"
 #include "PancakeHouseMenu.h"
 
 #include "NewMenuItem.h"
@@ -8,62 +7,48 @@ using namespace std;
 
 int main()
 {
+#if 0
 	//迭代器模式
-	//DinerMenu dinerMenu;
-	//PancakeHouseMenu pancakeHouseMenu;
+	PancakeHouseMenu pancakeHouseMenu;
 
-	//Iterator* iter1 = dinerMenu.createIterator();
-	//Iterator* iter2 = pancakeHouseMenu.createIterator();
+	Iterator* iter = pancakeHouseMenu.createIterator();
 
-	//MenuItem* temp = NULL;
+	MenuItem* temp = NULL;
+	cout << "输出pancakeHouse菜单：" << endl;
+	while (iter->hasNext())
+	{
+		temp = (MenuItem*)iter->next();
+		cout << temp->getName();
+		if (temp->isVegetarian())
+			cout << "(V)";
+		cout << "," << temp->getPrice() << endl;
+		cout << "	--" << temp->getDescription() << endl;
+		cout << endl;
+	}
 
-	//cout << "输出diner菜单：" << endl;
-	//while (iter1->hasNext())
-	//{
-	//	temp = (MenuItem*)iter1->next();
-	//	cout << temp->getName();
-	//	if(temp->isVegetarian())
-	//		cout << "(V)";
-	//	cout << "," << temp->getPrice() << endl;
-	//	cout << "	--" << temp->getDescription() << endl;
-	//	cout << endl;
-	//}
+	//delete iter;
 
-	//cout << "输出pancakeHouse菜单：" << endl;
-	//while (iter2->hasNext())
-	//{
-	//	temp = (MenuItem*)iter2->next();
-	//	cout << temp->getName();
-	//	if (temp->isVegetarian())
-	//		cout << "(V)";
-	//	cout << "," << temp->getPrice() << endl;
-	//	cout << "	--" << temp->getDescription() << endl;
-	//	cout << endl;
-	//}
-
-	//delete iter1;
-	//delete iter2;
-
-
+#elif 0
 	//组合模式
-// 	MenuComponent* pancakeHouseMenu = new NewMenu("PANCAKE HOUSE MENU", "Breakfast");
-// 	MenuComponent* dinerMenu = new NewMenu("DINER MENU", "Lunch");
-// 	MenuComponent* cafeMenu = new NewMenu("CAFE MENU", "Dinner");
-// 	MenuComponent* dessertMenu = new NewMenu("DESSERT MENU", "Dessert of course!");
-// 
-// 	MenuComponent* allMenus = new NewMenu("ALL MENU", "All menu combined");
-// 	allMenus->add(pancakeHouseMenu);
-// 	allMenus->add(dinerMenu);
-// 	allMenus->add(cafeMenu);
-// 
-// 	pancakeHouseMenu->add(new NewMenuItem("cake", "good", true, 5));
-// 	dinerMenu->add(new NewMenuItem("rice", "very good", true, 0.9));
-// 	dinerMenu->add(dessertMenu);
-// 	cafeMenu->add(new NewMenuItem("kabuqino", "taste good", true, 2));
-// 	dessertMenu->add(new NewMenuItem("Apple Pie", "sweet", true, 1.3));
-// 
-// 	allMenus->print();
+ 	MenuComponent* pancakeHouseMenu = new NewMenu("PANCAKE HOUSE MENU", "Breakfast");
+ 	MenuComponent* dinerMenu = new NewMenu("DINER MENU", "Lunch");
+ 	MenuComponent* cafeMenu = new NewMenu("CAFE MENU", "Dinner");
+ 	MenuComponent* dessertMenu = new NewMenu("DESSERT MENU", "Dessert of course!");
+ 
+ 	MenuComponent* allMenus = new NewMenu("ALL MENU", "All menu combined");
+ 	allMenus->add(pancakeHouseMenu);
+ 	allMenus->add(dinerMenu);
+ 	allMenus->add(cafeMenu);
+ 
+ 	pancakeHouseMenu->add(new NewMenuItem("cake", "good", true, 5));
+ 	dinerMenu->add(new NewMenuItem("rice", "very good", true, 0.9));
+ 	dinerMenu->add(dessertMenu);
+ 	cafeMenu->add(new NewMenuItem("kabuqino", "taste good", true, 2));
+ 	dessertMenu->add(new NewMenuItem("Apple Pie", "sweet", true, 1.3));
+ 
+ 	allMenus->print();
 
+#elif 1
 
 	//组合迭代器模式
 	MenuComponent* pancakeHouseMenu = new NewMenu("PANCAKE HOUSE MENU", "Breakfast");
@@ -111,6 +96,8 @@ int main()
 	delete iter;
 
 	delete allMenus;		//深度优先搜索型的析构
+
+#endif
 	
 	system("pause");
 	return 0;

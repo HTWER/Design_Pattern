@@ -16,17 +16,14 @@
     <Filter Include="头文件\失败代码">
       <UniqueIdentifier>{5e6da4a0-c6c3-4c9f-ba41-19bfc185aaea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\非组合模式迭代器">
-      <UniqueIdentifier>{02039d50-d677-4906-b8ed-28edcc4f4848}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\非组合模式迭代器\kernel">
-      <UniqueIdentifier>{c2b04341-1c13-4b5e-9708-344fa442e139}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\组合模式迭代器">
       <UniqueIdentifier>{a6943eb3-1504-4c37-a9c4-da86f175e91c}</UniqueIdentifier>
     </Filter>
     <Filter Include="头文件\组合模式迭代器\kernel">
       <UniqueIdentifier>{3b9ee900-6047-4d3f-9eba-bc14db413bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\迭代器模式">
+      <UniqueIdentifier>{02039d50-d677-4906-b8ed-28edcc4f4848}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,20 +33,11 @@
     <ClInclude Include="NewMenu.h">
       <Filter>头文件\组合模式迭代器</Filter>
     </ClInclude>
-    <ClInclude Include="DinerMenu.h">
-      <Filter>头文件\非组合模式迭代器</Filter>
-    </ClInclude>
     <ClInclude Include="MenuItem.h">
-      <Filter>头文件\非组合模式迭代器</Filter>
+      <Filter>头文件\迭代器模式</Filter>
     </ClInclude>
     <ClInclude Include="PancakeHouseMenu.h">
-      <Filter>头文件\非组合模式迭代器</Filter>
-    </ClInclude>
-    <ClInclude Include="DinerMenuIterator.h">
-      <Filter>头文件\非组合模式迭代器\kernel</Filter>
-    </ClInclude>
-    <ClInclude Include="PancakeHouseMenuIterator.h">
-      <Filter>头文件\非组合模式迭代器\kernel</Filter>
+      <Filter>头文件\迭代器模式</Filter>
     </ClInclude>
     <ClInclude Include="Fail_CompositeIterator.h">
       <Filter>头文件\失败代码</Filter>
@@ -65,6 +53,9 @@
     </ClInclude>
     <ClInclude Include="MenuComponent.h">
       <Filter>头文件\组合模式迭代器\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="PancakeHouseMenuIterator.h">
+      <Filter>头文件\迭代器模式</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -13,8 +13,6 @@
   <ItemGroup>
     <ClInclude Include="CompositeIterator.h" />
     <ClInclude Include="Fail_CompositeIterator.h" />
-    <ClInclude Include="DinerMenu.h" />
-    <ClInclude Include="DinerMenuIterator.h" />
     <ClInclude Include="Iterator.h" />
     <ClInclude Include="MenuComponent.h" />
     <ClInclude Include="MenuItem.h" />

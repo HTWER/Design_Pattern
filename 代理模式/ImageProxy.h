@@ -9,7 +9,7 @@ class Image;
 class ImageProxy
 {
 private:
-	bool receiving = false;
+	bool creating = false;
 public:	
 	Image* image;		//析构时释放
 	string imageURL;

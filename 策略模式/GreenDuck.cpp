@@ -6,7 +6,6 @@ GreenDuck::GreenDuck()
 {
 }
 
-
 GreenDuck::~GreenDuck()
 {
 }

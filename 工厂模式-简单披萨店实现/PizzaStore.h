@@ -24,7 +24,7 @@ public:
 	Pizza * orderPizza(string type)
 	{
 		//工厂模式关键的地方在这里，通过一个基类来接收工厂生产出来的东西；
-		//这个基类中有着许多虚方法；调用虚函数的时候会调用到子类的最新重写虚函数实现
+		//这个基类中有着许多虚方法；
 		Pizza * pizza = createPizza(type);
 
 		pizza->prepare();

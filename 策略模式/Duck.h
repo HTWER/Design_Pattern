@@ -14,10 +14,10 @@ public:
 
 	//实函数
 	void swin();            //所有的鸭子都会游泳,且游泳的方式都相同
+	void SetFlyBehavior(FlyBehavior * flyBehavior);			//为接口FlyBehavior连接芯片的链接函数
+	void SetQuackBehavior(QuackBehavior * quackBahavior);	//为接口QuackBehavior连接芯片的链接函数
 	void PerformFly();      //调用接口的函数
 	void PerformQuack();    //调用接口的函数
-	void SetFlyBehavior(FlyBehavior * flyBehavior);  //为接口FlyBehavior连接芯片的链接函数
-	void SetQuackBehavior(QuackBehavior * quackBahavior);//为接口QuackBehavior连接芯片的链接函数
 
 	//纯虚函数
 	virtual void Display() = 0; //每个鸭子的样子都不同，用接口来实现更好

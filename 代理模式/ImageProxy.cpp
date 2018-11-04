@@ -39,9 +39,9 @@ void ImageProxy::paint()
 	else
 	{
 		cout << "Loading, please wait..." << endl;
-		if (!receiving)
+		if (!creating)
 		{
-			receiving = true;
+			creating = true;
 			//开启一个独立的线程异步下载图片
 			_beginthread(CreateImage, 0, this);
 		}

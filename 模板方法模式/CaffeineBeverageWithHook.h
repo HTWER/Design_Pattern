@@ -2,7 +2,7 @@
 #define __CAFFEINEBEVERAGEIWTHHOOK_H__
 
 //这个设计模式跟之前的设计模式最大的不同在于：不再使用对象组合，而是使用继承来实现新功能
-//这个模式最大的用处在与设计框架
+//这个模式最大的用处在于设计框架
 
 #include <iostream>
 using namespace std;

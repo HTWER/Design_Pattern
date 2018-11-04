@@ -6,7 +6,6 @@ RedDuck::RedDuck()
 {
 }
 
-
 RedDuck::~RedDuck()
 {
 }

@@ -11,7 +11,7 @@ public:
 	Beverage();
 	~Beverage();
 
-	//写成纯虚函数虚函数
+	//写成纯虚函数
 	virtual string getDescription() = 0;
 	virtual float cost() = 0;
 

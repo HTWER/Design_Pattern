@@ -6,7 +6,7 @@
 
 int main()
 {
-#if 0
+#if 1
 	ImageProxy* imageProxy = new ImageProxy("127.0.0.1/xxx.png");
 
 	cout << imageProxy->getWidth() << endl;
@@ -19,6 +19,8 @@ int main()
 	Sleep(4000);
 	cout << imageProxy->getWidth() << endl;
 	cout << imageProxy->getHeight() << endl;
+
+	delete imageProxy;
 #else
 	PersonBeanImpl* realPersonBean = new PersonBeanImpl();
 
@@ -41,11 +43,11 @@ int main()
 	cout << personBeanProxy2->getGender().c_str() << endl;
 	cout << personBeanProxy2->getInterests().c_str() << endl;
 	cout << personBeanProxy2->getHotOrNotRating() << endl;
-#endif
-
-	cin.get();
 	delete personBeanProxy1;
 	delete personBeanProxy2;
 	delete realPersonBean;
+#endif
+
+	cin.get();
 	return 0;
 }

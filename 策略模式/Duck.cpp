@@ -2,11 +2,9 @@
 #include <iostream>
 using namespace std;
 
-
 Duck::Duck()
 {
 }
-
 
 Duck::~Duck()
 {
@@ -15,16 +13,6 @@ Duck::~Duck()
 void Duck::swin()
 {
 	cout << "游泳" << endl;
-}
-
-void Duck::PerformFly()
-{
-	m_flyBehavior->Fly();
-}
-
-void Duck::PerformQuack()
-{
-	m_quackBahavior->Quack();
 }
 
 void Duck::SetFlyBehavior(FlyBehavior * flyBehavior)
@@ -37,6 +25,12 @@ void Duck::SetQuackBehavior(QuackBehavior * quackBahavior)
 	m_quackBahavior = quackBahavior;
 }
 
+void Duck::PerformFly()
+{
+	m_flyBehavior->Fly();
+}
 
-
-
+void Duck::PerformQuack()
+{
+	m_quackBahavior->Quack();
+}

@@ -2,11 +2,9 @@
 #include <iostream>
 using namespace std;
 
-
 DecoyDuck::DecoyDuck()
 {
 }
-
 
 DecoyDuck::~DecoyDuck()
 {

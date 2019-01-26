@@ -20,6 +20,7 @@
 - 代理模式
 - 复合模式
 - MVC
+	- 其实等价于现在的MVVM
 
 ### 参考资料 ###
 《HeadFirst设计模式》,Eric Freeman；ElElisabeth Freeman

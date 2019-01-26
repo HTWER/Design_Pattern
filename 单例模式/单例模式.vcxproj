@@ -70,10 +70,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Singleton2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Singleton.cpp" />
+    <ClCompile Include="Singleton2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
